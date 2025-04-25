@@ -1,0 +1,412 @@
+:root {
+    /* Paleta de colores de la Wiki Oficial de Hollow Knight */
+    --hk-wiki-bg-dark: #1f1f1f;          /* Fondo oscuro principal */
+    --hk-wiki-bg-light: #2c2c2c;         /* Fondo de cajas */
+    --hk-wiki-purple-dark: #2c3282;      /* Púrpura oscuro (bordes) */
+    --hk-wiki-purple-light: #5d5bef;     /* Púrpura claro (destacados) */
+    --hk-wiki-blue: #4d79ff;             /* Azul para enlaces */
+    --hk-wiki-text-primary: #f8f8f8;     /* Texto principal */
+    --hk-wiki-text-secondary: #bbbbbb;   /* Texto secundario */
+    --hk-wiki-accent: #889eff;           /* Acentuaciones */
+    --hk-wiki-border: #3d3d3d;  
+    --hk-login-button: #ffc500;        
+
+    /* Variables de diseño */
+    --hk-wiki-border-radius: 5px;
+    --hk-wiki-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    --hk-wiki-transition: all 0.2s ease;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--hk-wiki-bg-dark);
+    color: var(--hk-wiki-text-primary);
+    line-height: 1.6;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+/* Barra de navegación */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--hk-wiki-bg-light);
+    padding: 10px 20px;
+    border-bottom: 2px solid var(--hk-wiki-purple-dark);
+    box-shadow: var(--hk-wiki-box-shadow);
+}
+
+.nav-logo img {
+    transition: 
+        transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        filter 0.4s ease-in-out;
+    filter: brightness(0.9);
+    transform-origin: center;
+}
+
+.nav-logo img:hover {
+    transform: scale(1.03); /* Reducir ligeramente el escalado */
+    filter: brightness(1.05); /* Reducir el cambio de brillo */
+}
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: var(--hk-wiki-text-primary);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 0;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.33, 1, 0.68, 1); /* Curva de transición más suave */
+    will-change: transform; /* Optimización para animaciones fluidas */
+    margin: 10px 60px;
+}
+
+.nav-links a:hover {
+    color: var(--hk-wiki-accent);
+    transform: translateY(-1px); /* Movimiento más sutil */
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1.5px; /* Línea un poco más delgada */
+    bottom: -1px;
+    left: 0;
+    background-color: var(--hk-wiki-accent);
+    transition: 
+        width 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+        background-color 0.5s ease;
+    transform-origin: left center;
+    opacity: 0.8; /* Transparencia para suavizar */
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+    background-color: var(--hk-wiki-purple-light);
+}
+.nav-search input {
+    padding: 8px 12px;
+    border-radius: var(--hk-wiki-border-radius);
+    border: 1px solid var(--hk-wiki-border);
+    background-color: var(--hk-wiki-bg-dark);
+    color: var(--hk-wiki-text-primary);
+}
+
+.nav-search button {
+    padding: 8px 15px;
+    background-color: var(--hk-wiki-purple-dark);
+    color: white;
+    border: none;
+    border-radius: var(--hk-wiki-border-radius);
+    cursor: pointer;
+    transition: background-color var(--hk-wiki-transition);
+}
+
+.nav-search button:hover {
+    background-color: var(--hk-wiki-purple-light);
+}
+
+/* Contenido principal */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.article-header {
+    display: block;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: var(--hk-wiki-accent);
+    position: relative;
+    padding: 20px 0;
+    margin: 30px auto;
+    max-width: 80%;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+h1:hover {
+    transform: translateY(-3px);
+    text-shadow: 0 2px 8px rgba(141, 160, 255, 0.4);
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--hk-wiki-purple-light), transparent);
+    border-radius: 50%;
+    filter: blur(1px);
+    transition: all 0.3s ease;
+}
+
+h1:hover::after {
+    width: 180px;
+    background: linear-gradient(90deg, transparent, var(--hk-wiki-purple-light), var(--hk-wiki-accent), transparent);
+}
+
+h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--hk-wiki-purple-dark), transparent);
+    transition: all 0.3s ease;
+}
+
+h1:hover::before {
+    width: 120px;
+}
+
+
+.subtitle {
+    color: var(--hk-wiki-text-secondary);
+    font-style: italic;
+    width: calc(100% - 320px); /* Mismo ancho que article-text */
+    margin: 10px 0;
+    padding: 0;
+    clear: both;
+}
+
+/* Caja de información */
+.info-box {
+    float: right;
+    background-color: var(--hk-wiki-bg-light);
+    border: 1px solid var(--hk-wiki-purple-dark);
+    border-radius: var(--hk-wiki-border-radius);
+    padding: 15px;
+    margin: 0 0 20px 20px;
+    width: 280px;
+    box-shadow: var(--hk-wiki-box-shadow);
+}
+
+.info-box img {
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 5px;
+    border: 1px solid var(--hk-wiki-border);
+}
+
+.info-list h3 {
+    border-bottom: 2px solid var(--hk-wiki-purple-dark);
+    padding-bottom: 8px;
+    color: var(--hk-wiki-accent);
+    margin-top: 0;
+}
+
+.info-box-content {
+    border-bottom: 1px solid var(--hk-wiki-border);
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.info-box-content:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.info-box-content p {
+    margin: 5px 0;
+}
+
+.info-box-content strong {
+    color: var(--hk-wiki-accent);
+}
+
+.info-box-content ul {
+    margin: 5px 0;
+    padding-left: 20px;
+}
+
+.info-box-content li {
+    margin-bottom: 5px;
+    color: var(--hk-wiki-text-secondary);
+}
+
+/* Texto del artículo */
+.article-text {
+    background-color: var(--hk-wiki-bg-light);
+    padding: 20px;
+    border-radius: var(--hk-wiki-border-radius);
+    box-shadow: var(--hk-wiki-box-shadow);
+    overflow: hidden;
+    border-left: 4px solid var(--hk-wiki-purple-dark);
+}
+
+.article-text h2 {
+    color: var(--hk-wiki-accent);
+    border-bottom: 1px solid var(--hk-wiki-border);
+    padding-bottom: 8px;
+    margin-top: 25px;
+}
+
+.article-text p {
+    margin-bottom: 15px;
+}
+
+.article-text a {
+    color: var(--hk-wiki-blue);
+    text-decoration: none;
+}
+
+.article-text a:hover {
+    text-decoration: underline;
+}
+
+/* Pie de página */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--hk-wiki-bg-light);
+    color: var(--hk-wiki-text-secondary);
+    margin-top: 40px;
+    border-top: 1px solid var(--hk-wiki-purple-dark);
+    clear: both;
+    font-size: 0.9em;
+}
+
+/* Efectos de hover y transiciones */
+a, button, .info-box, .article-text {
+    transition: var(--hk-wiki-transition);
+}
+
+/*Estilo para autores */
+/* Estilos para la sección de autores */
+.authors-section {
+    padding: 10px 0;
+}
+
+.author-container {
+    display: flex;
+    flex-direction: row; /* Cambia a horizontal */
+    flex-wrap: wrap; /* Para que se ajuste en móviles */
+    gap: 20px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.author-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 4px;
+    border: 1px solid var(--hk-wiki-border);
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.author-name {
+    font-weight: 500;
+    color: var(--hk-wiki-text-primary);
+}
+
+.author-id {
+    font-size: 0.85em;
+    color: var(--hk-wiki-text-secondary);
+}
+
+/* Boton login */
+
+.nav-login a {
+    border-radius: 5px;
+    padding: 2px 10px;
+    color: var(--hk-wiki-text-primary);
+    background-color: var(--hk-login-button);
+    font-weight: bold;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    text-align: center; /* Centra el texto como lo haría un input */
+    min-width: 80px; /* Ancho mínimo para mantener buena proporción */
+}
+
+.nav-login a:hover {
+    background-color: transparent;
+    color: var(--hk-login-button);
+    border-color: var(--hk-login-button);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transform: translateY(-1px);
+    text-decoration: none; /* Asegura que no aparezca subrayado al hover */
+}
+
+.nav-login a:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.1s ease;
+}
+
+/* Para mantener la alineación vertical con otros elementos del nav */
+.nav-login {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .info-box {
+        float: none;
+        width: auto;
+        margin: 0 0 20px 0;
+    }
+    
+    .nav-search {
+        width: 100%;
+    }
+    
+    .nav-search input {
+        width: 70%;
+    }
+}

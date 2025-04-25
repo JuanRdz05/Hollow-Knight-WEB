@@ -1,0 +1,387 @@
+/* Estilos base y variables */
+:root {
+    /* Paleta de colores de la Wiki Oficial de Hollow Knight */
+    --hk-wiki-bg-dark: #1f1f1f;
+    --hk-wiki-bg-light: #2c2c2c;
+    --hk-wiki-purple-dark: #2c3282;
+    --hk-wiki-purple-light: #5d5bef;
+    --hk-wiki-blue: #4d79ff;
+    --hk-wiki-text-primary: #f8f8f8;
+    --hk-wiki-text-secondary: #bbbbbb;
+    --hk-wiki-accent: #889eff;
+    --hk-wiki-border: #3d3d3d;
+    --hk-login-button: #ffc500;
+
+    /* Variables de diseño */
+    --hk-wiki-border-radius: 5px;
+    --hk-wiki-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    --hk-wiki-transition: all 0.2s ease;
+}
+
+body {
+    overflow-x: hidden;
+    position: relative;
+    background-color: var(--hk-wiki-bg-dark);
+    color: var(--hk-wiki-text-primary);
+}
+
+html {
+    scroll-behavior: smooth;
+    height: auto !important;
+}
+
+/* Estilos para el título principal */
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: var(--hk-wiki-accent);
+    position: relative;
+    padding: 20px 0;
+    margin: 30px auto;
+    max-width: 80%;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+h1:hover {
+    transform: translateY(-3px);
+    text-shadow: 0 2px 8px rgba(141, 160, 255, 0.4);
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--hk-wiki-purple-light), transparent);
+    border-radius: 50%;
+    filter: blur(1px);
+    transition: all 0.3s ease;
+}
+
+h1:hover::after {
+    width: 180px;
+    background: linear-gradient(90deg, transparent, var(--hk-wiki-purple-light), var(--hk-wiki-accent), transparent);
+}
+
+h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--hk-wiki-purple-dark), transparent);
+    transition: all 0.3s ease;
+}
+
+h1:hover::before {
+    width: 120px;
+}
+
+/* Sección de áreas */
+.mapa-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.mapa-section h2, .mapa-section h4 {
+    color: var(--hk-wiki-accent);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    border-bottom: 2px solid var(--hk-wiki-purple-dark);
+    padding-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.mapa-section h2:hover {
+    transform: translateY(-3px);
+}
+
+.mapa-section h4 {
+    font-size: 1.2rem;
+    color: var(--hk-wiki-text-secondary);
+    text-align: center;
+    margin: 20px auto;
+    padding: 8px 0;
+    position: relative;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-bottom: none;
+}
+
+.mapa-section h4:hover {
+    transform: translateY(-3px);
+    color: var(--hk-wiki-accent);
+    text-shadow: 0 1px 3px rgba(141, 160, 255, 0.3);
+}
+
+.mapa-section h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 1.5px;
+    background: var(--hk-wiki-purple-light);
+    transition: width 0.3s ease;
+}
+
+.mapa-section h4:hover::after {
+    width: 60px;
+}
+
+/* Grid de áreas */
+.mapa-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+/* Tarjeta de área */
+.mapa-card {
+    background-color: var(--hk-wiki-bg-light);
+    border-radius: var(--hk-wiki-border-radius);
+    overflow: hidden;
+    box-shadow: var(--hk-wiki-box-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 3px solid var(--hk-wiki-purple-dark);
+}
+
+.mapa-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-left-color: var(--hk-wiki-purple-light);
+    cursor: pointer;
+}
+
+
+.mapa-image {
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--hk-wiki-bg-dark);
+    position: relative;
+}
+
+.mapa-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.mapa-card:hover .mapa-image img {
+    transform: scale(1.05);
+}
+
+.mapa-info {
+    padding: 15px;
+}
+
+.mapa-name {
+    color: var(--hk-wiki-accent);
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.mapa-description {
+    color: var(--hk-wiki-text-primary);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.mapa-details {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid var(--hk-wiki-border);
+    font-size: 0.85rem;
+}
+
+.mapa-details p {
+    margin: 5px 0;
+    color: var(--hk-wiki-text-secondary);
+}
+
+.mapa-details strong {
+    color: var(--hk-wiki-text-primary);
+}
+
+/* Contenedor del mapa completo con efectos unificados */
+.full-map-container {
+    margin: 30px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--hk-wiki-bg-light);
+    border-radius: var(--hk-wiki-border-radius);
+    box-shadow: var(--hk-wiki-box-shadow);
+    max-width: 1000px;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.full-map-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3),
+                0 0 15px rgba(136, 158, 255, 0.2);
+    border-color: var(--hk-wiki-purple-light);
+    background-color: rgba(40, 40, 60, 0.8);
+}
+
+.full-map {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--hk-wiki-border-radius);
+    border: 1px solid var(--hk-wiki-border);
+    transition: all 0.4s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.full-map-container:hover .full-map {
+    transform: scale(1.02);
+    border-color: var(--hk-wiki-accent);
+    box-shadow: 0 0 10px rgba(136, 158, 255, 0.3);
+}
+
+.map-caption {
+    color: var(--hk-wiki-text-secondary);
+    font-style: italic;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    transition: all 0.4s ease;
+    position: relative;
+    font-size: 16px;
+}
+
+.full-map-container:hover .map-caption {
+    color: var(--hk-wiki-text-primary);
+    text-shadow: 0 0 8px rgba(136, 158, 255, 0.3);
+    transform: translateY(5px);
+}
+
+/* Efecto de iluminación para todo el contenedor */
+.full-map-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+        circle at center,
+        rgba(136, 158, 255, 0.1) 0%,
+        transparent 70%
+    );
+    border-radius: var(--hk-wiki-border-radius);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.full-map-container:hover::after {
+    opacity: 1;
+}
+
+/* Efecto de brillo para la imagen */
+.full-map-container:hover .full-map {
+    filter: brightness(1.05);
+}
+
+.npc-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.npc-card-link:hover .npc-card {
+    /* Efectos hover que ya tengas */
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+        max-width: 90%;
+        letter-spacing: 1px;
+    }
+    
+    h1::after {
+        width: 100px;
+    }
+    
+    h1:hover::after {
+        width: 120px;
+    }
+
+    .mapa-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mapa-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .mapa-section h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* .mapa-card .mapa-image {
+    height: 200px;
+    overflow: hidden;
+    background-color: #000;
+    position: relative;
+}
+
+.mapa-card .mapa-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center; /* Posición por defecto - centrado 
+    transition: transform 0.3s ease;
+}
+
+/* Clases para ajustar posición vertical */
+/* .img-pos-top .mapa-image img {
+    object-position: center top;
+}
+
+.img-pos-bottom .mapa-image img {
+    object-position: center bottom;
+}
+
+.img-pos-up .mapa-image img {
+    object-position: center 30%;
+}
+
+.img-pos-down .mapa-image img {
+    object-position: center 70%;
+}  */
+
+

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hollow Knight - ComePiernas</title>
+    <link rel="stylesheet" href="../../CSS/navbar.css">
+    <link rel="stylesheet" href="../../CSS/footer.css">
+    <link rel="stylesheet" href="../../CSS/comentarios.css">
+    <link rel="stylesheet" href="../../CSS/NPCS/COMEPIERNAS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="../index.html"><img src="../../IMAGENES/hk-logo.png" alt="Hollow Knight Logo" width="150" class="no-lightbox"></a>
+        </div>
+        <div class="nav-links">
+            <a href="../index.html">Inicio</a>
+            <a href="../NPC.html">NPCs</a>
+            <a href="../JEFES.html">Jefes</a>
+            <a href="../Mapa.html">Mapa</a>
+            <a href="../Lore.html">Lore</a>
+        </div>
+        <div class="nav-search">
+            <input type="text" placeholder="Buscar en la wiki...">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="nav-login">
+            <a href="../login.html">Iniciar sesión</a>
+        </div>
+    </nav>
+
+    <main class="npc-page">
+        <header class="npc-header">
+            <h1>COMEPIERNAS</h1>
+            <div class="npc-quote">
+                <img src="../../IMAGENES/IMAGENES NPCS/Dialogue_Top.webp" alt="Top-imagen" class="no-lightbox dialogue-top">
+                <blockquote>
+                    ""Si tienes suficientes Geo, te conviertes en rey. Cuando yo consiga suficientes Geo, me convertiré en rey..."
+                    <footer>- ComePiernas</footer>
+                </blockquote>
+                <img src="../../IMAGENES/IMAGENES NPCS/Dialogue_Bottom.webp" alt="Bottom-Imagen" class="no-lightbox dialogue-bottom">
+            </div>
+        </header>
+
+        <section class="npc-main-content">
+            <div class="npc-content-grid">
+                <!-- Columna izquierda con imagen y detalles -->
+                <div class="npc-left-column">
+                    <div class="npc-image-container">
+                        <img src="../../IMAGENES/IMAGENES NPCS/Legeater.webp" alt="ComePiernas" class="npc-main-image">
+                    </div>
+                    
+                    <div class="npc-details">
+                        <h2>DETALLES</h2>
+                        <div class="details-grid">
+                            <div class="detail-item">
+                                <h3>ESTADO</h3>
+                                <p>Activo</p>
+                            </div>
+                            <div class="detail-item">
+                                <h3>GÉNERO</h3>
+                                <p>Masculino</p>
+                            </div>
+                            <div class="detail-item">
+                                <h3>UBICACIÓN</h3>
+                                <p>Fungal Wastes</p>
+                            </div>
+                            <div class="detail-item">
+                                <h3>FUNCIÓN</h3>
+                                <p>Vendedor de amuletos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Columna derecha con información principal -->
+                <div class="npc-right-column">
+                    <div class="npc-info-section">
+                        <h2>DESCRIPCIÓN</h2>
+                        <p><strong>ComePiernas</strong> es un peculiar NPC en <em>Hollow Knight</em> que se especializa en la venta y reparación de amuletos, aunque con un macabro interés por las piernas de los insectos.</p>
+                        
+                        <h2>LORE</h2>
+                        <p>Este excéntrico personaje habita en una pequeña cueva en el Camino Verde. Su obsesión por las piernas de otros insectos es evidente en su diálogo, aunque nunca llega a actuar violentamente. A pesar de su comportamiento inquietante, ofrece servicios valiosos al Caballero.</p>
+                        
+                        <!-- Sección de ubicación mejorada -->
+                        <div class="location-section">
+                            <h2>UBICACIÓN</h2>
+                            <div class="location-content">
+                                <div class="location-text">
+                                    <p>ComePiernas se encuentra en el Camino Verde, cerca del área de Fogón Canción:</p>
+                                    <div class="location-details">
+                                        <div class="detail-icon">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <span>Fungal Wastes, zona norte</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="location-image-container">
+                                    <img src="../../IMAGENES/IMAGENES NPCS/LEGEATER/Mapshot_HK_Leg_Eater_01.webp" alt="Ubicación de ComePiernas en el mapa" class="location-image">
+                                    <p class="image-caption">Ubicación exacta de ComePiernas en el mapa del juego</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="npc-interactions">
+            <div class="interaction-header" id="interactionHeader">
+                <h2>INTERACCIONES</h2>
+                <i class="fas fa-chevron-down accordion-icon" id="accordionIcon"></i>
+            </div>
+            
+            <div class="interaction-content" id="interactionContent">
+                <p>ComePiernas ofrece varios servicios relacionados con la compra y reparación de amuletos</p>
+                
+                <div class="trade-container">
+                    <!-- Amuleto Frágil de Fuerza -->
+                    <div class="trade-item">
+                        <div class="item-image">
+                            <img src="../../IMAGENES/IMAGENES NPCS/LEGEATER/Fragile_Strength.webp" alt="Amuleto Frágil de Fuerza" class="item-icon">
+                        </div>
+                        <div class="trade-details">
+                            <h3>Amuleto Frágil de Fuerza</h3>
+                            <div class="price-container">
+                                <span class="price">Precio: 600 Geo</span>
+                                <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp" alt="Geo" class="currency-icon no-lightbox">
+                            </div>
+                            <p class="item-description">Aumenta el daño de tus ataques con el aguijón en un 50%</p>
+                            <ul class="amulet-details">
+                                <li>Costo de reparación: 250 Geo</li>
+                                <li>Ranuras requeridas: 3</li>
+                                <li>Se rompe al morir</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Amuleto Frágil de Corazón -->
+                    <div class="trade-item">
+                        <div class="item-image">
+                            <img src="../../IMAGENES/IMAGENES NPCS/LEGEATER/Fragile_Heart.webp" alt="Amuleto Frágil de Corazón" class="item-icon">
+                        </div>
+                        <div class="trade-details">
+                            <h3>Amuleto Frágil de Corazón</h3>
+                            <div class="price-container">
+                                <span class="price">Precio: 350 Geo</span>
+                                <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp" alt="Geo" class="currency-icon no-lightbox">
+                            </div>
+                            <p class="item-description">Aumenta tu salud máxima en 2 máscaras</p>
+                            <ul class="amulet-details">
+                                <li>Costo de reparación: 100 Geo</li>
+                                <li>Ranuras requeridas: 2</li>
+                                <li>Se rompe al morir</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Amuleto Frágil de Codicia -->
+                    <div class="trade-item">
+                        <div class="item-image">
+                            <img src="../../IMAGENES/IMAGENES NPCS/LEGEATER/Fragile_Greed.webp" alt="Amuleto Frágil de Codicia" class="item-icon">
+                        </div>
+                        <div class="trade-details">
+                            <h3>Amuleto Frágil de Codicia</h3>
+                            <div class="price-container">
+                                <span class="price">Precio: 200 Geo</span>
+                                <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp" alt="Geo" class="currency-icon no-lightbox">
+                            </div>
+                            <p class="item-description">Aumenta la cantidad de Geo obtenido de enemigos</p>
+                            <ul class="amulet-details">
+                                <li>Costo de reparación: 150 Geo</li>
+                                <li>Ranuras requeridas: 2</li>
+                                <li>Se rompe al morir</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Información adicional -->
+                    <div class="trade-info">
+                        <h3>Mecánica de los Amuletos Frágiles</h3>
+                        <ul>
+                            <li><strong>Fragilidad:</strong> Todos los amuletos frágiles se rompen al morir</li>
+                            <li><strong>Reparación:</strong> Pueden ser reparados por ComePiernas por un costo menor al precio original</li>
+                            <li><strong>Mejora:</strong> En el DLC Godmaster, Divine puede convertirlos en versiones Inquebrantables</li>
+                            <li><strong>Estrategia:</strong> Útiles para jugadores confiados en sus habilidades</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="npc-trivia">
+            <div class="trivia-header" id="triviaHeader">
+                <h2>CURIOSIDADES</h2>
+                <i class="fas fa-chevron-down accordion-icon" id="triviaAccordionIcon"></i>
+            </div>
+            
+            <div class="trivia-content" id="triviaContent">
+                <div class="trivia-item">
+                    <h3>DISEÑO</h3>
+                    <p>Su diseño grotesco y dentadura prominente reflejan su naturaleza caníbal y obsesión con las piernas.</p>
+                </div>
+                <div class="trivia-item">
+                    <h3>DIÁLOGO</h3>
+                    <p>Todos sus diálogos hacen referencia a su deseo de comer piernas, aunque nunca lo hace realmente.</p>
+                </div>
+                <div class="trivia-item">
+                    <h3>RELACIÓN CON DIVINE</h3>
+                    <ul>
+                        <li>
+                            <p>En el DLC Godmaster, Divine puede convertir los amuletos frágiles de ComePiernas en versiones inquebrantables.</p>
+                        </li>
+                        <li>
+                            <p>ComePiernas menciona que Divine "le robó sus trucos".</p>
+                        </li>
+                        <li>
+                            <p>Ambos comparten una conexión con los amuletos y su mejora.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="npc-gallery">
+            <h2>GALERÍA</h2>
+            <div class="gallery-container">
+                <!-- Imagen 1 -->
+                <div class="gallery-card">
+                    <div class="gallery-image-container">
+                        <img src="../../IMAGENES/IMAGENES NPCS/LEGEATER/Fungal_Wastes_Leg_Eater_Shop.webp" alt="La tienda y el banco del Comepiernas" class="gallery-image">
+                    </div>
+                    <div class="gallery-caption">
+                        <p>La tienda y el banco del Comepiernas</p>
+                    </div>
+                </div>
+                
+                <!-- Imagen 2 -->
+                <div class="gallery-card">
+                    <div class="gallery-image-container">
+                        <img src="../../IMAGENES/IMAGENES NPCS/LEGEATER/Screenshot_HK_Leg_Eater_02.webp" alt="Las garras del Comepiernas en la tienda de Divine" class="gallery-image">
+                    </div>
+                    <div class="gallery-caption">
+                        <p>Las garras del Comepiernas en la tienda de Divine</p>
+                    </div>
+                </div>
+                
+                <!-- Imagen 3 -->
+                <div class="gallery-card">
+                    <div class="gallery-image-container">
+                        <img src="../../IMAGENES/IMAGENES NPCS/LEGEATER/Leg_Eater_sketch.webp" alt="Bocetos" class="gallery-image">
+                    </div>
+                    <div class="gallery-caption">
+                        <p>Boceto</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <section class="comments-section">
+        <h2>Comentarios</h2>
+        
+        <form class="comment-form" id="commentForm">
+            <h3>Deja tu comentario</h3>
+            <div class="form-group">
+                <label for="comment">Comentario:</label>
+                <textarea id="comment" name="comment" rows="4" required placeholder="Escribe tu comentario aquí..."></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Enviar comentario</button>
+        </form>
+        <div class="comments-list" id="commentsList">
+            <div class="comment">
+                <div class="comment-header">
+                    <img src="../IMAGENES/default-avatar.png" alt="Avatar" class="comment-avatar">
+                    <div class="comment-user">
+                        <span class="username">UsuarioEjemplo</span>
+                        <span class="comment-date">20/11/2023</span>
+                    </div>
+                </div>
+                <div class="comment-content">
+                    <p>¡Este NPC es tan inquietante como útil! Sus amuletos me salvaron muchas veces.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>© 2023 Hollow Knight Wiki. Todos los derechos reservados a Team Cherry.</p>
+    </footer>
+    <script src="../../JS/NPC/imagenes.js"></script>
+    <script src="../../JS/NPC/JINN/acordeon-Interacciones.js"></script>
+    <script src="../../JS/NPC/fade-in.js"></script>
+</body>
+</html>

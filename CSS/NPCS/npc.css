@@ -1,0 +1,375 @@
+/* Estilos para la sección de NPCs */
+:root {
+    /* Paleta de colores de la Wiki Oficial de Hollow Knight */
+    --hk-wiki-bg-dark: #1f1f1f;          /* Fondo oscuro principal */
+    --hk-wiki-bg-light: #2c2c2c;         /* Fondo de cajas */
+    --hk-wiki-purple-dark: #2c3282;      /* Púrpura oscuro (bordes) */
+    --hk-wiki-purple-light: #5d5bef;     /* Púrpura claro (destacados) */
+    --hk-wiki-blue: #4d79ff;             /* Azul para enlaces */
+    --hk-wiki-text-primary: #f8f8f8;     /* Texto principal */
+    --hk-wiki-text-secondary: #bbbbbb;   /* Texto secundario */
+    --hk-wiki-accent: #889eff;           /* Acentuaciones */
+    --hk-wiki-border: #3d3d3d;  
+    --hk-login-button: #ffc500;        
+
+    /* Variables de diseño */
+    --hk-wiki-border-radius: 5px;
+    --hk-wiki-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    --hk-wiki-transition: all 0.2s ease;
+}
+.npc-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* Añade esto para resetear posibles transforms */
+/* body, html {    
+    overflow-x: hidden;
+} */
+
+body {
+    overflow-x: hidden;
+    position: relative; /* Mejora el contexto de posicionamiento */
+}
+
+html
+{
+    scroll-behavior: smooth;
+    height: auto !important;
+}
+
+
+main {
+    position: relative;
+    z-index: 0; /* Menor que el navbar */
+    padding-top: 0; /* Elimina el padding-top */
+}
+/* Estilo ORIGINAL del h2 (tal como lo tienes ahora) */
+.npc-section h2, h4 {
+    color: var(--hk-wiki-accent);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    border-bottom: 2px solid var(--hk-wiki-purple-dark);
+    padding-bottom: 10px;
+    transition: transform 0.3s ease; /* Solo agregamos esta línea */
+}
+
+/* Efecto hover IDÉNTICO al del h1 (solo el levantamiento) */
+.npc-section h2:hover {
+    transform: translateY(-3px);
+}
+
+.npc-section h4 {
+    font-size: 1.2rem;
+    color: var(--hk-wiki-text-secondary);
+    text-align: center;
+    margin: 20px auto;
+    padding: 8px 0;
+    position: relative;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-bottom: none;
+}
+
+/* Efecto hover mejorado */
+.npc-section h4:hover {
+    transform: translateY(-3px);
+    color: var(--hk-wiki-accent);
+    text-shadow: 0 1px 3px rgba(141, 160, 255, 0.3);
+}
+
+/* Subrayado decorativo al hover */
+.npc-section h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 1.5px;
+    background: var(--hk-wiki-purple-light);
+    transition: width 0.3s ease;
+}
+
+.npc-section h4:hover::after {
+    width: 60px;
+}
+
+/* Grid de NPCs */
+.npc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+/* Tarjeta de NPC */
+.npc-card {
+    background-color: var(--hk-wiki-bg-light);
+    border-radius: var(--hk-wiki-border-radius);
+    overflow: hidden;
+    box-shadow: var(--hk-wiki-box-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 3px solid var(--hk-wiki-purple-dark);
+}
+
+.npc-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-left-color: var(--hk-wiki-purple-light);
+    cursor: pointer;
+}
+
+.npc-image {
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--hk-wiki-bg-dark);
+}
+
+.npc-image img {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.npc-card:hover .npc-image img {
+    transform: scale(1.05);
+}
+
+.npc-info {
+    padding: 15px;
+}
+
+.npc-name {
+    color: var(--hk-wiki-accent);
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.npc-description {
+    color: var(--hk-wiki-text-primary);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.npc-items {
+    margin-top: 10px;
+    padding-left: 20px;
+    color: var(--hk-wiki-text-secondary);
+    font-size: 0.9rem;
+}
+
+.npc-items li {
+    margin-bottom: 5px;
+}
+
+.npc-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.npc-card-link:hover .npc-card {
+    /* Efectos hover que ya tengas */
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Estilo para el título principal h1 */
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: var(--hk-wiki-accent);
+    position: relative;
+    padding: 20px 0;
+    margin: 30px auto;
+    max-width: 80%;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Efecto hover */
+h1:hover {
+    transform: translateY(-3px);
+    text-shadow: 0 2px 8px rgba(141, 160, 255, 0.4);
+}
+
+/* Efecto de borde inferior */
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 3px;
+    background: linear-gradient(90deg, 
+                transparent, 
+                var(--hk-wiki-purple-light), 
+                transparent);
+    border-radius: 50%;
+    filter: blur(1px);
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover para el borde inferior */
+h1:hover::after {
+    width: 180px;
+    background: linear-gradient(90deg, 
+                transparent, 
+                var(--hk-wiki-purple-light), 
+                var(--hk-wiki-accent),
+                transparent);
+}
+
+/* Efecto de borde superior */
+h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(90deg, 
+                transparent, 
+                var(--hk-wiki-purple-dark), 
+                transparent);
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover para el borde superior */
+h1:hover::before {
+    width: 120px;
+}
+
+/* Reproductor de audio - Versión refinada */
+.npc-audio {
+    margin-top: 20px;
+    text-align: center;
+    padding: 15px;
+    background-color: var(--hk-wiki-bg-light); /* Mantenemos el contenedor como está */
+    /* border-radius: var(--hk-wiki-border-radius); */
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.npc-audio audio
+{
+    border: none !important;
+}
+
+.npc-audio::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: var(--hk-wiki-purple-dark);
+    transition: all 0.3s ease;
+}
+
+.npc-audio audio {
+    width: 100%;
+    max-width: 280px;
+    transition: all 0.3s ease;
+}
+
+/* Personalización de controles */
+.npc-audio audio::-webkit-media-controls-panel {
+    background-color: var(--hk-wiki-bg-dark); /* Fondo oscuro inicial */
+    /*border-radius: var(--hk-wiki-border-radius);*/
+}
+
+.npc-audio:hover audio::-webkit-media-controls-panel {
+    background-color: rgba(31, 31, 31, 0.8); /* Suavizado al hover */
+}
+
+/* Firefox */
+.npc-audio audio {
+    --media-control-background: var(--hk-wiki-bg-dark);
+}
+
+.npc-audio:hover audio {
+    --media-control-background: rgba(31, 31, 31, 0.8);
+}
+
+/* Resto de estilos (se mantienen igual) */
+.npc-audio:hover {
+    /* border-color: var(--hk-wiki-text-secondary); */
+    box-shadow: 0 0 0 1px var(--hk-wiki-text-secondary);
+}
+
+.npc-audio:hover::before {
+    background: var(--hk-wiki-text-secondary);
+    width: 4px;
+}
+
+.audio-label {
+    font-size: 0.85rem;
+    color: var(--hk-wiki-text-secondary);
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.npc-audio:hover .audio-label {
+    color: var(--hk-wiki-accent);
+    text-shadow: 0 0 5px rgba(136, 158, 255, 0.3);
+}
+
+
+/* Versión responsive */
+@media (max-width: 768px) {
+    .npc-audio {
+        padding: 8px;
+    }
+    
+    .npc-audio audio {
+        max-width: 240px;
+    }
+}
+/* Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+        max-width: 90%;
+        letter-spacing: 1px;
+    }
+    
+    h1::after {
+        width: 100px;
+    }
+    
+    h1:hover::after {
+        width: 120px;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .npc-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .npc-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .npc-section h2 {
+        font-size: 1.5rem;
+    }
+}

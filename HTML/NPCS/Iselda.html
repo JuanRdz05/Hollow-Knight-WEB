@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hollow Knight - Iselda</title>
+    <link rel="stylesheet" href="../../CSS/navbar.css">
+    <link rel="stylesheet" href="../../CSS/footer.css">
+    <link rel="stylesheet" href="../../CSS/comentarios.css">
+    <link rel="stylesheet" href="../../CSS/NPCS/ISELDA.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="../index.html"><img src="../../IMAGENES/hk-logo.png" alt="Hollow Knight Logo" width="150" class="no-lightbox"></a>
+        </div>
+        <div class="nav-links">
+            <a href="../index.html">Inicio</a>
+            <a href="../NPC.html">NPCs</a>
+            <a href="../JEFES.html">Jefes</a>
+            <a href="../Mapa.html">Mapa</a>
+            <a href="../Lore.html">Lore</a>
+        </div>
+        <div class="nav-search">
+            <input type="text" placeholder="Buscar en la wiki...">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="nav-login">
+            <a href="../login.html">Iniciar sesión</a>
+        </div>
+    </nav>
+
+    <main class="npc-page">
+        <header class="npc-header">
+            <h1>ISELDA</h1>
+            <div class="npc-quote">
+                <img src="../../IMAGENES/IMAGENES NPCS/Dialogue_Top.webp" alt="Top-imagen" class="no-lightbox dialogue-top">
+                <blockquote>
+                    "A veces mi esposo hace que Hallownest suene maravilloso, pero otras veces parece un lugar espantoso y peligroso."
+                    <footer>- Iselda</footer>
+                </blockquote>
+                <img src="../../IMAGENES/IMAGENES NPCS/Dialogue_Bottom.webp" alt="Bottom-Imagen" class="no-lightbox dialogue-bottom">
+            </div>
+        </header>
+
+        <section class="npc-main-content">
+            <div class="npc-content-grid">
+                <!-- Columna izquierda con imagen y detalles -->
+                <div class="npc-left-column">
+                    <div class="npc-image-container">
+                        <img src="../../IMAGENES/IMAGENES NPCS/Iselda.webp" alt="Iselda" class="npc-main-image">
+                    </div>
+                    
+                    <div class="npc-details">
+                        <h2>DETALLES</h2>
+                        <div class="details-grid">
+                            <div class="detail-item">
+                                <h3>ESTADO</h3>
+                                <p>Activa</p>
+                            </div>
+                            <div class="detail-item">
+                                <h3>GÉNERO</h3>
+                                <p>Femenino</p>
+                            </div>
+                            <div class="detail-item">
+                                <h3>UBICACIÓN</h3>
+                                <p>Tienda de Dirtmouth</p>
+                            </div>
+                            <div class="detail-item">
+                                <h3>FUNCIÓN</h3>
+                                <p>Vendedora de mapas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Columna derecha con información principal -->
+                <div class="npc-right-column">
+                    <div class="npc-info-section">
+                        <h2>DESCRIPCIÓN</h2>
+                        <p><strong>Iselda</strong> es una NPC en <em>Hollow Knight</em> que vende mapas y accesorios relacionados en su tienda en Dirtmouth. Es la esposa de Cornifer y administra el negocio mientras él está fuera explorando.</p>
+                        
+                        <h2>LORE</h2>
+                        <p>Iselda y Cornifer son una pareja de viajeros que llegaron a Hallownest atraídos por su fama. Mientras Cornifer explora las profundidades para crear mapas, Iselda se queda en la tienda vendiendo los mapas terminados y otros útiles. Aunque a veces se muestra preocupada por su esposo, valora su independencia y su pasión por la cartografía.</p>
+                        
+                        <!-- Sección de ubicación mejorada -->
+                        <div class="location-section">
+                            <h2>UBICACIÓN</h2>
+                            <div class="location-content">
+                                <div class="location-text">
+                                    <p>Iselda se encuentra en:</p>
+                                    <div class="location-details">
+                                        <div class="detail-icon">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <span>Tienda de mapas, Dirtmouth</span>
+                                        </div>
+                                        <p>Requisitos para acceder:</p>
+                                        <ul class="stations-list">
+                                            <li class="requirement-with-image">
+                                                <div class="requirement-content">
+                                                    <div class="requirement-icon-text">
+                                                        <i class="fas fa-coins"></i>
+                                                        <span>El jugador se encuentre con Cornifier</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="location-image-container">
+                                    <img src="../../IMAGENES/IMAGENES NPCS/ISELDA/Mapshot_HK_Iselda_01.webp" alt="Mapa de la tienda de Iselda" class="location-image">
+                                    <p class="image-caption">Ubicación de la tienda en Dirtmouth</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="npc-interactions">
+            <div class="interaction-header" id="interactionHeader">
+                <h2>INTERACCIONES</h2>
+                <i class="fas fa-chevron-down accordion-icon" id="accordionIcon"></i>
+            </div>
+            
+            <div class="interaction-content" id="interactionContent">
+                <p>Iselda ofrece varios mapas y accesorios útiles para la exploración:</p>
+                
+                <div class="service-container">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <img src="../../IMAGENES/IMAGENES NPCS/ISELDA/Area_Map.webp" alt="Tienda de mapas" class="service-image">
+                        </div>
+                        <div class="service-details">
+                            <h3>Productos Disponibles</h3>
+                            <div class="requirement-container">
+                                <span class="requirement">Requisito: Geo suficiente</span>
+                                <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp" alt="Geo" class="requirement-icon">
+                            </div>
+                            <p class="service-description">Vende mapas y accesorios para la exploración</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-info">
+                        <h3>Inventario Completo de Iselda</h3>
+                        
+                        <div class="product-category">
+                            <h4><i class="fas fa-tools"></i> Herramientas Básicas</h4>
+                            <div class="product-grid">
+                                <!-- Brújula Errante -->
+                                <div class="product-item">
+                                    <div class="product-image-container">
+                                        <img src="../../IMAGENES/IMAGENES NPCS/ISELDA/Wayward_Compass.webp" alt="Brújula Errante" class="product-image">
+                                    </div>
+                                    <div class="product-details">
+                                        <h5>Brújula Errante</h5>
+                                        <div class="product-price">
+                                            <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp" alt="Geo" class="price-icon">
+                                            <span>220 Geo</span>
+                                        </div>
+                                        <p class="product-description">Muestra tu posición en el mapa</p>
+                                    </div>
+                                </div>
+                    
+                                <!-- Pluma -->
+                                <div class="product-item">
+                                    <div class="product-image-container">
+                                        <img src="../../IMAGENES/IMAGENES NPCS/ISELDA/Scroll_Map_Feather.webp" alt="Pluma" class="product-image">
+                                    </div>
+                                    <div class="product-details">
+                                        <h5>Pluma</h5>
+                                        <div class="product-price">
+                                            <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp" alt="Geo" class="price-icon">
+                                            <span>120 Geo</span>
+                                        </div>
+                                        <p class="product-description">Permite actualizar mapas con nueva información</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="product-category">
+                            <h4><i class="fas fa-thumbtack"></i> Pines de Ubicación</h4>
+                            <div class="product-grid">
+                                <!-- Alfiler de Banco -->
+                                <div class="product-item">
+                                    <div class="product-image-container">
+                                        <img src="../../IMAGENES/IMAGENES NPCS/ISELDA/Map_Pin_Bench_green.webp" alt="Alfiler de Banco" class="product-image">
+                                    </div>
+                                    <div class="product-details">
+                                        <h5>Alfiler de Banco</h5>
+                                        <div class="product-price">
+                                            <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp" alt="Geo" class="price-icon">
+                                            <span>100 Geo</span>
+                                        </div>
+                                        <p class="product-description">Marca bancos de descanso</p>
+                                    </div>
+                                </div>
+                    
+                                <!-- Alfiler de Estación de Ciervo -->
+                                <div class="product-item">
+                                    <div class="product-image-container">
+                                        <img src="../../IMAGENES/IMAGENES NPCS/ISELDA/Map_Pin_Stag.webp" alt="Alfiler de Estación de Ciervo" class="product-image">
+                                    </div>
+                                    <div class="product-details">
+                                        <h5>Alfiler de Estación de Ciervo</h5>
+                                        <div class="product-price">
+                                            <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp" alt="Geo" class="price-icon">
+                                            <span>100 Geo</span>
+                                        </div>
+                                        <p class="product-description">Marca estaciones de transporte</p>
+                                    </div>
+                                </div>
+                    
+                                <!-- Alfiler de Capullo -->
+                                <div class="product-item">
+                                    <div class="product-image-container">
+                                        <img src="../../IMAGENES/IMAGENES NPCS/ISELDA/Map_Pin_Cocoon.webp" alt="Alfiler de Capullo" class="product-image">
+                                    </div>
+                                    <div class="product-details">
+                                        <h5>Alfiler de Capullo</h5>
+                                        <div class="product-price">
+                                            <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp" alt="Geo" class="price-icon">
+                                            <span>100 Geo</span>
+                                        </div>
+                                        <p class="product-description">Marca capullos de vida</p>
+                                    </div>
+                                </div>
+                    
+                                <!-- Alfiler de Aguas Termales -->
+                                <div class="product-item">
+                                    <div class="product-image-container">
+                                        <img src="../../IMAGENES/IMAGENES NPCS/ISELDA/Map_Pin_Springs.webp" alt="Alfiler de Aguas Termales" class="product-image">
+                                    </div>
+                                    <div class="product-details">
+                                        <h5>Alfiler de Aguas Termales</h5>
+                                        <div class="product-price">
+                                            <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp" alt="Geo" class="price-icon">
+                                            <span>100 Geo</span>
+                                        </div>
+                                        <p class="product-description">Marca fuentes termales</p>
+                                    </div>
+                                </div>
+                    
+                                <!-- Alfiler de Raíz Susurrante -->
+                                <div class="product-item">
+                                    <div class="product-image-container">
+                                        <img src="../../IMAGENES/IMAGENES NPCS/ISELDA/Map_Pin_Tree.webp" alt="Alfiler de Raíz Susurrante" class="product-image">
+                                    </div>
+                                    <div class="product-details">
+                                        <h5>Alfiler de Raíz Susurrante</h5>
+                                        <div class="product-price">
+                                            <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp" alt="Geo" class="price-icon">
+                                            <span>100 Geo</span>
+                                        </div>
+                                        <p class="product-description">Marca raíces con esencia</p>
+                                    </div>
+                                </div>
+                    
+                                <!-- Alfiler de Tumba de Guerrero -->
+                                <div class="product-item">
+                                    <div class="product-image-container">
+                                        <img src="../../IMAGENES/IMAGENES NPCS/ISELDA/Map_Pin_Warriors_Grave.webp" alt="Alfiler de Tumba de Guerrero" class="product-image">
+                                    </div>
+                                    <div class="product-details">
+                                        <h5>Alfiler de Tumba de Guerrero</h5>
+                                        <div class="product-price">
+                                            <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp" alt="Geo" class="price-icon">
+                                            <span>100 Geo</span>
+                                        </div>
+                                        <p class="product-description">Marca tumbas de guerreros</p>
+                                    </div>
+                                </div>
+                    
+                                <!-- Alfiler de Tranvía -->
+                                <div class="product-item">
+                                    <div class="product-image-container">
+                                        <img src="../../IMAGENES/IMAGENES NPCS/ISELDA/Map_Pin_Tram.webp" alt="Alfiler de Tranvía" class="product-image">
+                                    </div>
+                                    <div class="product-details">
+                                        <h5>Alfiler de Tranvía</h5>
+                                        <div class="product-price">
+                                            <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp" alt="Geo" class="price-icon">
+                                            <span>100 Geo</span>
+                                        </div>
+                                        <p class="product-description">Marca estaciones de tranvía</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="product-category">
+                            <h4><i class="fas fa-map-marker-alt"></i> Marcadores Especiales</h4>
+                            <div class="product-grid">
+                                <!-- Marcador de Larva -->
+                                <div class="product-item">
+                                    <div class="product-image-container">
+                                        <img src="../../IMAGENES/IMAGENES NPCS/ISELDA/Scarab_Marker.webp" alt="Marcador de Larva" class="product-image">
+                                    </div>
+                                    <div class="product-details">
+                                        <h5>Marcador de Larva</h5>
+                                        <div class="product-price">
+                                            <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp" alt="Geo" class="price-icon">
+                                            <span>100 Geo</span>
+                                        </div>
+                                        <p class="product-description">Marca larvas rescataas</p>
+                                    </div>
+                                </div>
+                    
+                                <!-- Marcador de Concha -->
+                                <div class="product-item">
+                                    <div class="product-image-container">
+                                        <img src="../../IMAGENES/IMAGENES NPCS/ISELDA/Shell_Marker.webp" alt="Marcador de Concha" class="product-image">
+                                    </div>
+                                    <div class="product-details">
+                                        <h5>Marcador de Concha</h5>
+                                        <div class="product-price">
+                                            <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp" alt="Geo" class="price-icon">
+                                            <span>100 Geo</span>
+                                        </div>
+                                        <p class="product-description">Marca conchas de reliquia</p>
+                                    </div>
+                                </div>
+                    
+                                <!-- Marcador Brillante -->
+                                <div class="product-item">
+                                    <div class="product-image-container">
+                                        <img src="../../IMAGENES/IMAGENES NPCS/ISELDA/Gleaming_Marker.webp" alt="Marcador Brillante" class="product-image">
+                                    </div>
+                                    <div class="product-details">
+                                        <h5>Marcador Brillante</h5>
+                                        <div class="product-price">
+                                            <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp" alt="Geo" class="price-icon">
+                                            <span>100 Geo</span>
+                                        </div>
+                                        <p class="product-description">Marca objetos brillantes</p>
+                                    </div>
+                                </div>
+                    
+                                <!-- Marcador de Símbolo -->
+                                <div class="product-item">
+                                    <div class="product-image-container">
+                                        <img src="../../IMAGENES/IMAGENES NPCS/ISELDA/Token_Marker.webp" alt="Marcador de Símbolo" class="product-image">
+                                    </div>
+                                    <div class="product-details">
+                                        <h5>Marcador de Símbolo</h5>
+                                        <div class="product-price">
+                                            <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp" alt="Geo" class="price-icon">
+                                            <span>100 Geo</span>
+                                        </div>
+                                        <p class="product-description">Marca símbolos importantes</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="npc-trivia">
+            <div class="trivia-header" id="triviaHeader">
+                <h2>CURIOSIDADES</h2>
+                <i class="fas fa-chevron-down accordion-icon" id="triviaAccordionIcon"></i>
+            </div>
+            
+            <div class="trivia-content" id="triviaContent">
+                <div class="trivia-item">
+                    <h3>DISEÑO</h3>
+                    <p>Su diseño está inspirado en los insectos tejedores, con un vestido que recuerda a los capullos de seda. Su máscara tiene un patrón similar a las alas de mariposa.</p>
+                </div>
+                <div class="trivia-item">
+                    <h3>RELACIÓN CON CORNIFER</h3>
+                    <p>Aunque a veces se queja de las largas ausencias de Cornifer, claramente lo ama y apoya su trabajo. Sus diálogos revelan una relación matrimonial muy realista.</p>
+                </div>
+                <div class="trivia-item">
+                    <h3>PERSONALIDAD</h3>
+                    <p>Iselda es práctica y directa, pero también muestra preocupación maternal por el Caballero, ofreciéndole consejos sobre cómo mantenerse seguro en las cavernas.</p>
+                </div>
+                <div class="trivia-item">
+                    <h3>DIÁLOGO SECRETO</h3>
+                    <p>Si vuelves a hablar con ella después de comprar todos sus productos, revelará que extraña su vida de aventuras pero valora la estabilidad que tienen ahora en Dirtmouth.</p>
+                </div>
+            
+        </section>
+
+        <section class="npc-gallery">
+            <h2>GALERÍA</h2>
+            <div class="gallery-container">
+                <!-- Imagen 1 -->
+                <div class="gallery-card">
+                    <div class="gallery-image-container">
+                        <img src="../../IMAGENES/IMAGENES NPCS/ISELDA/Screenshot_HK_Iselda_03.webp" alt="Exterior de la tienda de Iselda antes de ser abierta" class="gallery-image">
+                    </div>
+                    <div class="gallery-caption">
+                        <p>Exterior de la tienda de Iselda antes de ser abierta.</p>
+                    </div>
+                </div>
+                
+                <!-- Imagen 2 -->
+                <div class="gallery-card">
+                    <div class="gallery-image-container">
+                        <img src="../../IMAGENES/IMAGENES NPCS/ISELDA/Dirtmouth_Iselda_Store.webp" alt="Interior de la tienda de Iselda" class="gallery-image">
+                    </div>
+                    <div class="gallery-caption">
+                        <p>Interior de la tienda de Iselda.</p>
+                    </div>
+                </div>
+                
+                <!-- Imagen 3 -->
+                <div class="gallery-card">
+                    <div class="gallery-image-container">
+                        <img src="../../IMAGENES/IMAGENES NPCS/ISELDA/Iselda_WJ.webp" alt="Descripción de Iselda en el diario del Errante" class="gallery-image">
+                    </div>
+                    <div class="gallery-caption">
+                        <p>Descripción de Iselda en el diario del Errante.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <section class="comments-section">
+        <h2>Comentarios</h2>
+        
+        <form class="comment-form" id="commentForm">
+            <h3>Deja tu comentario</h3>
+            <div class="form-group">
+                <label for="comment">Comentario:</label>
+                <textarea id="comment" name="comment" rows="4" required placeholder="Escribe tu comentario aquí..."></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Enviar comentario</button>
+        </form>
+        <div class="comments-list" id="commentsList">
+            <div class="comment">
+                <div class="comment-header">
+                    <img src="../IMAGENES/default-avatar.png" alt="Avatar" class="comment-avatar">
+                    <div class="comment-user">
+                        <span class="username">UsuarioEjemplo</span>
+                        <span class="comment-date">20/11/2023</span>
+                    </div>
+                </div>
+                <div class="comment-content">
+                    <p>Iselda es uno de los NPC más útiles del juego, sus mapas son esenciales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>© 2023 Hollow Knight Wiki. Todos los derechos reservados a Team Cherry.</p>
+    </footer>
+    <script src="../../JS/NPC/imagenes.js"></script>
+    <script src="../../JS/NPC/JINN/acordeon-Interacciones.js"></script>
+    <script src="../../JS/NPC/fade-in.js"></script>
+</body>
+</html>

@@ -1,0 +1,401 @@
+:root {
+    /* Añade estos colores */
+    --hk-boss-bg-dark: #1a1a3a;
+    --hk-boss-bg-light: #2c3282;
+    --hk-boss-glow: rgba(93, 91, 239, 0.15);
+
+    --hk-boss-red-light: #ff5e5e;
+    --hk-boss-red-dark: #8b0000;
+    --hk-boss-red-glow: rgba(255, 58, 58, 0.3);
+}
+body {
+    overflow-x: hidden;
+    position: relative; /* Mejora el contexto de posicionamiento */
+}
+
+html
+{
+    scroll-behavior: smooth;
+    height: auto !important;
+}
+
+h4
+{
+    border-bottom: none;
+}
+
+.npc-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.npc-card-link:hover .npc-card {
+    /* Efectos hover que ya tengas */
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: var(--hk-wiki-accent);
+    position: relative;
+    padding: 20px 0;
+    margin: 30px auto;
+    max-width: 80%;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Efecto hover */
+h1:hover {
+    transform: translateY(-3px);
+    text-shadow: 0 2px 8px rgba(141, 160, 255, 0.4);
+}
+
+/* Efecto de borde inferior */
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 3px;
+    background: linear-gradient(90deg, 
+                transparent, 
+                var(--hk-wiki-purple-light), 
+                transparent);
+    border-radius: 50%;
+    filter: blur(1px);
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover para el borde inferior */
+h1:hover::after {
+    width: 180px;
+    background: linear-gradient(90deg, 
+                transparent, 
+                var(--hk-wiki-purple-light), 
+                var(--hk-wiki-accent),
+                transparent);
+}
+
+/* Efecto de borde superior */
+h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(90deg, 
+                transparent, 
+                var(--hk-wiki-purple-dark), 
+                transparent);
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover para el borde superior */
+h1:hover::before {
+    width: 120px;
+}
+
+.boss-section h2, h4 {
+    color: var(--hk-wiki-accent);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    padding-bottom: 10px;
+    transition: transform 0.3s ease; /* Solo agregamos esta línea */
+}
+
+/* Efecto hover IDÉNTICO al del h1 (solo el levantamiento) */
+.boss-section h2:hover {
+    transform: translateY(-3px);
+}
+
+.boss-section h4 {
+    font-size: 1.2rem;
+    color: var(--hk-wiki-text-secondary);
+    text-align: center;
+    margin: 20px auto;
+    padding: 8px 0;
+    position: relative;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-bottom: none;
+}
+
+/* Efecto hover mejorado */
+.boss-section h4:hover {
+    transform: translateY(-3px);
+    color: var(--hk-wiki-accent);
+    text-shadow: 0 1px 3px rgba(141, 160, 255, 0.3);
+}
+
+/* Subrayado decorativo al hover */
+.boss-section h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 1.5px;
+    background: var(--hk-wiki-purple-light);
+    transition: width 0.3s ease;
+}
+
+.boss-section h4:hover::after {
+    width: 60px;
+}
+
+
+
+/* Estilos para la sección de Jefes - Heredando tu paleta de colores */
+.boss-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.boss-section h2 {
+    color: var(--hk-wiki-accent);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    border-bottom: 2px solid var(--hk-wiki-purple-dark);
+    padding-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.boss-section h2:hover {
+    transform: translateY(-3px);
+}
+
+.boss-section h4 {
+    font-size: 1.2rem;
+    color: var(--hk-wiki-text-secondary);
+    margin: 20px auto;
+}
+
+/* Grid de Jefes - Mismo estilo que NPCs pero con detalles de jefes */
+.boss-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+/* Estilos base de la tarjeta */
+.boss-card {
+    background-color: var(--hk-wiki-bg-light);
+    border-radius: var(--hk-wiki-border-radius);
+    overflow: hidden;
+    box-shadow: var(--hk-wiki-box-shadow);
+    transition: all 0.3s ease;
+    border-left: 3px solid var(--hk-wiki-purple-dark);
+    position: relative;
+}
+
+/* Efectos hover de la tarjeta */
+.boss-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-left-color: #ff3a3a;
+    z-index: 1;
+    cursor: pointer;
+}
+
+/* Contenedor de imagen */
+.boss-image {
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        135deg, 
+        var(--hk-wiki-purple-dark) 0%, 
+        var(--hk-boss-bg-dark) 100%
+    );
+    position: relative;
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Efecto hover para la imagen */
+.boss-card:hover .boss-image {
+    background: linear-gradient(
+        135deg,
+        var(--hk-boss-red-dark) 0%,
+        #5a0000 100%
+    );
+}
+
+/* Brillo base (morado) */
+.boss-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+        circle at center, 
+        var(--hk-boss-glow) 0%, 
+        transparent 70%
+    );
+    transition: all 0.5s ease;
+}
+
+/* Brillo hover (rojo) */
+.boss-card:hover .boss-image::before {
+    background: radial-gradient(
+        circle at center, 
+        var(--hk-boss-red-glow) 0%, 
+        transparent 70%
+    );
+}
+
+/* Capa de transición roja para toda la tarjeta */
+.boss-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 58, 58, 0.1) 0%,
+        rgba(139, 0, 0, 0.2) 100%
+    );
+    opacity: 0;
+    transition: opacity 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    z-index: -1;
+}
+
+.boss-card:hover::before {
+    opacity: 1;
+}
+
+/* Estilos del contenido */
+.boss-info {
+    padding: 15px;
+}
+
+.boss-name {
+    color: var(--hk-wiki-purple-light);
+    margin: 0 0 10px 0;
+    font-size: 1.4rem;
+    text-shadow: 0 0 3px rgba(93, 91, 239, 0.3);
+    transition: all 0.3s ease;
+}
+
+.boss-card:hover .boss-name {
+    color: var(--hk-boss-red-light);
+    text-shadow: 0 0 5px rgba(255, 94, 94, 0.5);
+    transform: translateY(-1px);
+}
+
+.boss-difficulty {
+    display: inline-block;
+    padding: 3px 8px;
+    background-color: var(--hk-wiki-purple-dark);
+    color: white;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.boss-card:hover .boss-difficulty {
+    background-color: var(--hk-boss-red-light);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(255, 58, 58, 0.3);
+}
+
+/* Sección de habilidades */
+.boss-abilities h5 {
+    color: var(--hk-wiki-accent);
+    margin: 10px 0 5px 0;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.boss-card:hover .boss-abilities h5 {
+    color: var(--hk-boss-red-light);
+    transform: translateX(3px);
+}
+
+.boss-abilities ul {
+    padding-left: 20px;
+    color: var(--hk-wiki-text-secondary);
+    font-size: 0.9rem;
+}
+
+.boss-abilities li {
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.boss-abilities li::before {
+    content: '⚔️';
+    position: absolute;
+    left: -20px;
+}
+
+.boss-description
+{
+    color: whitesmoke;
+}
+
+/* Define la posición base de cada jefe */
+.mantis-lords       { --pos-y: 80px; }
+.domador-dioses     { --pos-y: 39px; }
+.defensor           { --pos-y: 40px; }
+.soul-master        { --pos-y: 50px; }
+.traitor-lord       { --pos-y: 39px; }
+.uumuu-boss         { --pos-y: 40px; }
+.hollow-knight      {--pos-y: 90px;  }
+.vengamosca  {--pos-y: -40px;}
+.zote {--pos-y: 50px;}
+.mawlek {--pos-y: 50px;}
+.grim {--pos-y: 85px;}
+.soul-warrior {--pos-y: -105px;}
+
+/* Aplica las transformaciones */
+.boss-image img {
+    transform: translateY(var(--pos-y, 0));
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.boss-card:hover .boss-image img {
+    transform: translateY(var(--pos-y, 0)) scale(1.1);
+    filter: drop-shadow(0 0 10px var(--hk-boss-red-glow));
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .boss-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .boss-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .boss-section h2 {
+        font-size: 1.5rem;
+    }
+}

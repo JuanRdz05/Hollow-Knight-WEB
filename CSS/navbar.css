@@ -1,0 +1,229 @@
+/* NAVBAR.css - Estilos para la barra de navegación */
+
+:root {
+    /* Variables específicas para la navbar */
+    --hk-nav-bg: #2c2c2c;
+    --hk-nav-border: #2c3282;
+    --hk-nav-text: #f8f8f8;
+    --hk-nav-accent: #889eff;
+    --hk-nav-purple-light: #5d5bef;
+    --hk-nav-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    --hk-nav-login-btn: #ffc500;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--hk-wiki-bg-dark);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Estructura principal */
+.navbar {
+    position: sticky !important;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--hk-nav-bg);
+    padding: 10px 20px;
+    border-bottom: 2px solid var(--hk-nav-border);
+    box-shadow: var(--hk-nav-shadow);
+    isolation: isolate; /* Crea un nuevo contexto de apilamiento */
+
+}
+
+/* Logo */
+.nav-logo {
+    flex-shrink: 0;
+}
+
+.nav-logo img {
+    transition: 
+        transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        filter 0.4s ease-in-out;
+    filter: brightness(0.9);
+    transform-origin: center;
+    height: auto;
+    width: 150px;
+}
+
+.nav-logo img:hover {
+    transform: scale(1.03);
+    filter: brightness(1.05);
+}
+
+/* Enlaces de navegación */
+.nav-links {
+    display: flex;
+    gap: 15px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.nav-links a {
+    color: var(--hk-nav-text);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 0;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+    will-change: transform;
+    font-size: 0.95rem;
+    white-space: nowrap;
+    margin: 10px 60px;
+}
+
+.nav-links a:hover {
+    color: var(--hk-nav-accent);
+    transform: translateY(-1px);
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1.5px;
+    bottom: -1px;
+    left: 0;
+    background-color: var(--hk-nav-accent);
+    transition: 
+        width 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+        background-color 0.5s ease;
+    transform-origin: left center;
+    opacity: 0.8;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+    background-color: var(--hk-nav-purple-light);
+}
+
+/* Buscador */
+.nav-search {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.nav-search input {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #3d3d3d;
+    background-color: #1f1f1f;
+    color: var(--hk-nav-text);
+    min-width: 200px;
+    font-size: 0.9rem;
+}
+
+.nav-search button {
+    padding: 8px 15px;
+    background-color: var(--hk-nav-border);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-search button:hover {
+    background-color: var(--hk-nav-purple-light);
+}
+
+/* Botón de login */
+.nav-login {
+    margin-left: 15px;
+}
+
+.nav-login a {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 8px 16px;
+    color: #1f1f1f; /* Texto oscuro para contraste con el amarillo */
+    background-color: var(--hk-nav-login-btn);
+    font-weight: bold;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    text-decoration: none;
+    text-align: center;
+    min-width: 80px;
+    font-size: 0.9rem;
+}
+
+.nav-login a:hover {
+    background-color: transparent;
+    color: var(--hk-nav-login-btn);
+    border-color: var(--hk-nav-login-btn);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transform: translateY(-1px);
+}
+
+.nav-login a:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.1s ease;
+}
+
+
+
+/* Responsive */
+@media (max-width: 992px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 10px;
+    }
+    
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: space-around;
+        gap: 10px;
+    }
+    
+    .nav-search {
+        order: 2;
+        flex-grow: 1;
+        justify-content: flex-end;
+    }
+    
+    .nav-login {
+        order: 1;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-links {
+        flex-wrap: wrap;
+    }
+    
+    .nav-links a {
+        font-size: 0.85rem;
+        padding: 5px 8px;
+    }
+    
+    .nav-search input {
+        min-width: 150px;
+    }
+    
+    .nav-login a {
+        padding: 6px 12px;
+        min-width: 70px;
+    }
+}

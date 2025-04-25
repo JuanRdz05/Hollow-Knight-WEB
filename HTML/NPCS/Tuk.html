@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hollow Knight - Tuk</title>
+    <link rel="stylesheet" href="../../CSS/navbar.css">
+    <link rel="stylesheet" href="../../CSS/footer.css">
+    <link rel="stylesheet" href="../../CSS/comentarios.css">
+    <link rel="stylesheet" href="../../CSS/NPCS/TUK.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="../index.html"><img src="../../IMAGENES/hk-logo.png" alt="Hollow Knight Logo" width="150" class="no-lightbox"></a>
+        </div>
+        <div class="nav-links">
+            <a href="../index.html">Inicio</a>
+            <a href="../NPC.html">NPCs</a>
+            <a href="../JEFES.html">Jefes</a>
+            <a href="../Mapa.html">Mapa</a>
+            <a href="../Lore.html">Lore</a>
+        </div>
+        <div class="nav-search">
+            <input type="text" placeholder="Buscar en la wiki...">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="nav-login">
+            <a href="../login.html">Iniciar sesión</a>
+        </div>
+    </nav>
+
+    <main class="npc-page">
+        <header class="npc-header">
+            <h1>TUK</h1>
+            <div class="npc-quote">
+                <img src="../../IMAGENES/IMAGENES NPCS/Dialogue_Top.webp" alt="Top-imagen" class="no-lightbox dialogue-top">
+                <blockquote>
+                    "¡Raaawr! ¡Tuk vende cosas buenas! ¡Tuk encontrar cosas brillantes para ti!"
+                    <footer>- Tuk</footer>
+                </blockquote>
+                <img src="../../IMAGENES/IMAGENES NPCS/Dialogue_Bottom.webp" alt="Bottom-Imagen" class="no-lightbox dialogue-bottom">
+            </div>
+        </header>
+
+        <section class="npc-main-content">
+            <div class="npc-content-grid">
+                <!-- Columna izquierda con imagen y detalles -->
+                <div class="npc-left-column">
+                    <div class="npc-image-container">
+                        <img src="../../IMAGENES/IMAGENES NPCS/tuk.webp" alt="Tuk" class="npc-main-image">
+                    </div>
+                    
+                    <div class="npc-details">
+                        <h2>DETALLES</h2>
+                        <div class="details-grid">
+                            <div class="detail-item">
+                                <h3>ESTADO</h3>
+                                <p>Activo</p>
+                            </div>
+                            <div class="detail-item">
+                                <h3>GÉNERO</h3>
+                                <p>Femenino</p>
+                            </div>
+                            <div class="detail-item">
+                                <h3>UBICACIÓN</h3>
+                                <p>Royal Waterways</p>
+                            </div>
+                            <div class="detail-item">
+                                <h3>FUNCIÓN</h3>
+                                <p>Vendedora de Rancid Eggs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Columna derecha con información principal -->
+                <div class="npc-right-column">
+                    <div class="npc-info-section">
+                        <h2>DESCRIPCIÓN</h2>
+                        <p><strong>Tuk</strong> es una NPC en <em>Hollow Knight</em> que vende Huevos Rancios (Rancid Eggs). Es una criatura pequeña y excitable que habla en tercera persona y tiene un comportamiento infantil.</p>
+                        
+                        <h2>LORE</h2>
+                        <p>Tuk es una de las pocas criaturas que habitan en los Royal Waterways que no ha sido afectada por la infección. Parece ser una coleccionista de objetos brillantes y valiosos, especialmente los Huevos Rancios que vende al jugador.</p>
+                        
+                        <!-- Sección de ubicación mejorada -->
+                        <div class="location-section">
+                            <h2>UBICACIÓN</h2>
+                            <div class="location-content">
+                                <div class="location-text">
+                                    <p>Tuk se encuentra en:</p>
+                                    <div class="location-details">
+                                        <div class="detail-icon">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <span>Royal Waterways</span>
+                                        </div>
+                                        <p>Requisitos para acceder:</p>
+                                        <ul class="stations-list">
+                                            <li class="requirement-with-image">
+                                                <div class="requirement-content">
+                                                    <div class="requirement-icon-text">
+                                                        <i class="fas fa-key"></i>
+                                                        <span>Requiere la Llave Simple</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="requirement-with-image">
+                                                <div class="requirement-content">
+                                                    <div class="requirement-icon-text">
+                                                        <i class="fas fa-tint"></i>
+                                                        <span>Acceso a Royal Waterways</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="location-image-container">
+                                    <img src="../../IMAGENES/IMAGENES NPCS/TUK/Mapshot_HK_Tuk_01.webp" alt="Ubicación de Tuk" class="location-image">
+                                    <p class="image-caption">Ubicación en Royal Waterways</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="npc-interactions">
+            <div class="interaction-header" id="interactionHeader">
+                <h2>TIENDA</h2>
+                <i class="fas fa-chevron-down accordion-icon" id="accordionIcon"></i>
+            </div>
+            
+            <div class="interaction-content" id="interactionContent">
+                <p>Tuk ofrece Huevos Rancios (Rancid Eggs) que pueden ser útiles para recuperar tu sombra:</p>
+                
+                <div class="service-container">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <img src="../../IMAGENES/IMAGENES NPCS/TUK/Godmaster_Icon.webp" alt="Tienda de Tuk" class="service-image">
+                        </div>
+                        <div class="service-details">
+                            <h3>Mercancía de Tuk</h3>
+                            <div class="requirement-container">
+                                <span class="requirement">Requisito: Tener suficiente Geo</span>
+                                <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp" alt="Geo" class="requirement-icon">
+                            </div>
+                            <p class="service-description">Huevos Rancios para recuperar tu sombra</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-info">
+                        <h3>Productos Disponibles</h3>
+                        
+                        <div class="product-category">
+                            <h4><i class="fas fa-egg"></i> Huevos Rancios</h4>
+                            <div class="product-grid">
+                                <!-- Huevo Rancio -->
+                                <div class="product-item">
+                                    <div class="product-image-container">
+                                        <img src="../../IMAGENES/IMAGENES NPCS/SLY/Rancid_Egg.webp" alt="Huevo Rancio" class="product-image">
+                                    </div>
+                                    <div class="product-details">
+                                        <h5>Huevo Rancio</h5>
+                                        <div class="product-price">
+                                            <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp" alt="Geo" class="price-icon">
+                                            <span>80-150 Geo</span>
+                                        </div>
+                                        <p class="product-description">Precio variable. Puede ser usado con Confessor Jiji para recuperar tu sombra sin tener que enfrentarla.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="service-info">
+                            <h3>Información Adicional</h3>
+                            <ul>
+                                <li>Tuk vende Huevos Rancios a un precio que <strong>varía aleatoriamente</strong> entre 80 y 150 Geo</li>
+                                <li>Los Huevos Rancios pueden ser entregados a <strong>Confessor Jiji</strong> en Dirtmouth para recuperar tu sombra</li>
+                                <li>Tuk tiene un <strong>comportamiento infantil</strong> y habla en tercera persona</li>
+                                <li>Es una de las pocas NPCs que no ha sido afectada por la infección en Royal Waterways</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="npc-trivia">
+            <div class="trivia-header" id="triviaHeader">
+                <h2>CURIOSIDADES</h2>
+                <i class="fas fa-chevron-down accordion-icon" id="triviaAccordionIcon"></i>
+            </div>
+            
+            <div class="trivia-content" id="triviaContent">
+                <div class="trivia-item">
+                    <h3>DISEÑO</h3>
+                    <p>Tuk tiene un diseño único entre los NPCs del juego, con su pequeño tamaño y comportamiento infantil. Su apariencia sugiere que podría estar relacionada con las criaturas que habitan en las alcantarillas.</p>
+                </div>
+                <div class="trivia-item">
+                    <h3>PERSONALIDAD</h3>
+                    <p>Tuk es excitable y habla en tercera persona, con un vocabulario limitado. Su comportamiento infantil contrasta con el ambiente oscuro de Royal Waterways.</p>
+                </div>
+                <div class="trivia-item">
+                    <h3>MECÁNICA DE JUEGO</h3>
+                    <p>Los Huevos Rancios que vende Tuk son uno de los pocos métodos para recuperar tu sombra sin tener que enfrentarla directamente, especialmente útil en áreas peligrosas.</p>
+                </div>
+                <div class="trivia-item">
+                    <h3>RELACIÓN CON EL LORE</h3>
+                    <p>Tuk parece ser inmune a la infección, lo que sugiere que podría tener una naturaleza especial o que ha desarrollado resistencia viviendo en los Royal Waterways.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="npc-gallery">
+            <h2>GALERÍA</h2>
+            <div class="gallery-container">
+                <!-- Imagen 1 -->
+                <div class="gallery-card">
+                    <div class="gallery-image-container">
+                        <img src="../../IMAGENES/IMAGENES NPCS/TUK/Screenshot_HK_Tuk_01.webp" alt="Tuk" class="gallery-image">
+                    </div>
+                    <div class="gallery-caption">
+                        <p>Tuk.</p>
+                    </div>
+                </div>
+                
+                <!-- Imagen 2 -->
+                <div class="gallery-card">
+                    <div class="gallery-image-container">
+                        <img src="../../IMAGENES/IMAGENES NPCS/TUK/Screenshot_HK_Tuk_02.webp" alt="Tuk infectado" class="gallery-image">
+                    </div>
+                    <div class="gallery-caption">
+                        <p>Tuk infectado.</p>
+                    </div>
+                </div>
+                
+                <!-- Imagen 3 -->
+                <div class="gallery-card">
+                    <div class="gallery-image-container">
+                        <img src="../../IMAGENES/IMAGENES NPCS/TUK/BOON.webp" alt="Descripción de Tuk en el Diario del Errante" class="gallery-image">
+                    </div>
+                    <div class="gallery-caption">
+                        <p>Descripción de Tuk en el Diario del Errante.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <section class="comments-section">
+        <h2>Comentarios</h2>
+        
+        <form class="comment-form" id="commentForm">
+            <h3>Deja tu comentario</h3>
+            <div class="form-group">
+                <label for="comment">Comentario:</label>
+                <textarea id="comment" name="comment" rows="4" required placeholder="Escribe tu comentario aquí..."></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Enviar comentario</button>
+        </form>
+        <div class="comments-list" id="commentsList">
+            <div class="comment">
+                <div class="comment-header">
+                    <img src="../IMAGENES/default-avatar.png" alt="Avatar" class="comment-avatar">
+                    <div class="comment-user">
+                        <span class="username">EggCollector</span>
+                        <span class="comment-date">22/03/2023</span>
+                    </div>
+                </div>
+                <div class="comment-content">
+                    <p>¡Tuk es tan adorable! Sus huevos rancios me salvaron muchas veces cuando perdía mi sombra en lugares complicados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>© 2023 Hollow Knight Wiki. Todos los derechos reservados a Team Cherry.</p>
+    </footer>
+    <script src="../../JS/NPC/imagenes.js"></script>
+    <script src="../../JS/NPC/JINN/acordeon-Interacciones.js"></script>
+    <script src="../../JS/NPC/fade-in.js"></script>
+</body>
+</html>

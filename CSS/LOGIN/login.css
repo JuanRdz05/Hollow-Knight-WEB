@@ -1,0 +1,186 @@
+/* login.css - Versión mejorada */
+:root {
+    /* Paleta de colores de la Wiki Oficial de Hollow Knight */
+    --hk-wiki-bg-dark: #1f1f1f;          /* Fondo oscuro principal */
+    --hk-wiki-bg-light: #2c2c2c;         /* Fondo de cajas */
+    --hk-wiki-purple-dark: #2c3282;      /* Púrpura oscuro (bordes) */
+    --hk-wiki-purple-light: #5d5bef;     /* Púrpura claro (destacados) */
+    --hk-wiki-blue: #4d79ff;             /* Azul para enlaces */
+    --hk-wiki-text-primary: #f8f8f8;     /* Texto principal */
+    --hk-wiki-text-secondary: #bbbbbb;   /* Texto secundario */
+    --hk-wiki-accent: #889eff;           /* Acentuaciones */
+    --hk-wiki-border: #3d3d3d;  
+    --hk-login-button: #ffc500;        
+
+    /* Variables de diseño */
+    --hk-wiki-border-radius: 5px;
+    --hk-wiki-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    --hk-wiki-transition: all 0.2s ease;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--hk-wiki-bg-dark);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+}
+.login-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-form {
+    background-color: var(--hk-wiki-bg-light);
+    padding: 2.5rem;
+    border-radius: var(--hk-wiki-border-radius);
+    box-shadow: var(--hk-wiki-box-shadow);
+    width: 100%;
+    max-width: 380px;
+    border-left: 4px solid var(--hk-wiki-purple-dark);
+    margin: 2rem 0;
+}
+
+.login-form h2 {
+    color: var(--hk-wiki-accent);
+    text-align: center;
+    margin: 0 0 1.8rem 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--hk-wiki-text-primary);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem 1rem; /* Eliminamos el padding izquierdo adicional */
+    border: 1px solid var(--hk-wiki-border); /* Corregí la variable (antes border-color) */
+    background-color: var(--hk-wiki-bg-dark);
+    color: var(--hk-wiki-text-primary);
+    border-radius: var(--hk-wiki-border-radius);
+    font-size: 1rem;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--hk-wiki-purple-light);
+    box-shadow: 0 0 0 2px rgba(93, 91, 239, 0.2);
+}
+
+.form-group i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--hk-wiki-text-secondary);
+    font-size: 16px;
+    pointer-events: none;
+    width: 16px;
+    height: 16px;
+    display: grid;
+    place-items: center;
+}
+
+.fa-user {
+    transform: translateY(-50%) translateX(1px);
+}
+
+.fa-lock {
+    transform: translateY(-50%) translateX(1px);
+}
+
+.login-btn {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--hk-login-button);
+    color: #1a1a1a;
+    border: none;
+    border-radius: var(--hk-wiki-border-radius);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-family: inherit;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.login-btn:hover {
+    background-color: #ffd633;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.8rem;
+    font-size: 0.85rem;
+}
+
+.form-footer a {
+    color: var(--hk-wiki-blue);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-weight: 500;
+}
+
+.form-footer a:hover {
+    color: var(--hk-wiki-purple-light);
+    text-decoration: underline;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 480px) {
+    .login-form {
+        padding: 1.8rem;
+    }
+    
+    .login-form h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .form-group {
+        margin-bottom: 1.2rem;
+    }
+    
+    .form-group input {
+        padding: 0.65rem 0.65rem 0.65rem 2.3rem;
+    }
+}

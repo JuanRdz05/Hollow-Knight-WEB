@@ -1,0 +1,182 @@
+:root {
+    /* Paleta de colores de la Wiki Oficial de Hollow Knight */
+    --hk-wiki-bg-dark: #1f1f1f;          /* Fondo oscuro principal */
+    --hk-wiki-bg-light: #2c2c2c;         /* Fondo de cajas */
+    --hk-wiki-purple-dark: #2c3282;      /* Púrpura oscuro (bordes) */
+    --hk-wiki-purple-light: #5d5bef;     /* Púrpura claro (destacados) */
+    --hk-wiki-blue: #4d79ff;             /* Azul para enlaces */
+    --hk-wiki-text-primary: #f8f8f8;     /* Texto principal */
+    --hk-wiki-text-secondary: #bbbbbb;   /* Texto secundario */
+    --hk-wiki-accent: #889eff;           /* Acentuaciones */
+    --hk-wiki-border: #3d3d3d;  
+    --hk-login-button: #ffc500;        
+
+    /* Variables de diseño */
+    --hk-wiki-border-radius: 5px;
+    --hk-wiki-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    --hk-wiki-transition: all 0.2s ease;
+}
+
+
+.comments-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    clear: both;
+}
+
+.comments-section h2 {
+    color: var(--hk-wiki-accent);
+    border-bottom: 2px solid var(--hk-wiki-purple-dark);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Formulario de comentarios */
+.comment-form {
+    background-color: var(--hk-wiki-bg-light);
+    padding: 25px;
+    border-radius: var(--hk-wiki-border-radius);
+    margin: 0 auto 30px;
+    box-shadow: var(--hk-wiki-box-shadow);
+    border-left: 3px solid var(--hk-wiki-purple-dark);
+}
+
+.comment-form h3 {
+    color: var(--hk-wiki-text-primary);
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--hk-wiki-text-primary);
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: var(--hk-wiki-border-radius);
+    border: 1px solid var(--hk-wiki-border);
+    background-color: var(--hk-wiki-bg-dark);
+    color: var(--hk-wiki-text-primary);
+    font-family: inherit;
+    min-height: 120px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+.submit-btn {
+    background-color: var(--hk-wiki-purple-dark);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: var(--hk-wiki-border-radius);
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+    width: 200px;
+    margin: 20px auto 0;
+    transition: background-color var(--hk-wiki-transition);
+}
+
+.submit-btn:hover {
+    background-color: var(--hk-wiki-purple-light);
+}
+
+/* Lista de comentarios - Estilo coherente */
+.comments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.comment {
+    background-color: var(--hk-wiki-bg-light);
+    padding: 20px;
+    border-radius: var(--hk-wiki-border-radius);
+    box-shadow: var(--hk-wiki-box-shadow);
+    border-left: 3px solid var(--hk-wiki-border);
+    transition: transform 0.3s ease;
+}
+
+.comment:hover {
+    transform: translateY(-3px);
+    border-left-color: var(--hk-wiki-accent);
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.comment-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--hk-wiki-accent);
+}
+
+.comment-user {
+    display: flex;
+    flex-direction: column;
+}
+
+.username {
+    font-weight: bold;
+    color: var(--hk-wiki-accent);
+    font-size: 1.1em;
+}
+
+.comment-date {
+    font-size: 0.8em;
+    color: var(--hk-wiki-text-secondary);
+}
+
+.comment-content p {
+    margin: 0;
+    line-height: 1.6;
+    color: var(--hk-wiki-text-primary);
+}
+
+/* Responsive - Compatible con tus media queries */
+@media (max-width: 768px) {
+    .comments-section {
+        padding: 0 15px;
+    }
+    
+    .comment-header {
+        flex-direction: row; /* Mantenemos horizontal en móviles */
+        align-items: center;
+    }
+    
+    .comment-form {
+        padding: 20px 15px;
+    }
+    
+    .comment {
+        padding: 15px;
+    }
+}
+
+/* Ajuste específico para pantallas pequeñas */
+@media (max-width: 480px) {
+    .comment-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .comment-avatar {
+        margin-bottom: 10px;
+    }
+}

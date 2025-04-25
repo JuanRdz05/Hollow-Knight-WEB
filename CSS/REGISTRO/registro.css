@@ -1,0 +1,318 @@
+:root {
+    /* Usa las mismas variables que en login.css para consistencia */
+    --hk-wiki-bg-dark: #1f1f1f;
+    --hk-wiki-bg-light: #2c2c2c;
+    --hk-wiki-purple-dark: #2c3282;
+    --hk-wiki-purple-light: #5d5bef;
+    --hk-wiki-blue: #4d79ff;
+    --hk-wiki-text-primary: #f8f8f8;
+    --hk-wiki-text-secondary: #bbbbbb;
+    --hk-wiki-accent: #889eff;
+    --hk-wiki-border: #3d3d3d;
+    --hk-login-button: #ffc500;
+    --hk-wiki-border-radius: 5px;
+    --hk-wiki-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    --hk-wiki-transition: all 0.2s ease;
+}
+
+
+body
+{
+    background-color: var(--hk-wiki-bg-dark);
+}
+
+/* Estado inválido */
+.invalid-profile .profile-picture-preview {
+    border-color: #ff6b6b;
+    box-shadow: 0 0 0 2px rgba(255, 107, 107, 0.3);
+    animation: shake 0.5s;
+}
+
+.invalid-profile .upload-btn {
+    background-color: #ff6b6b;
+}
+
+/* Mostrar mensaje cuando hay error */
+.invalid-profile #profileImageError {
+    display: block;
+}
+
+/* Animación de shake */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-5px); }
+    40%, 80% { transform: translateX(5px); }
+}
+
+
+/* Asegurar que el mensaje de error sea visible */
+#profileImageError {
+    display: none;
+    color: #ff6b6b;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.invalid-profile #profileImageError {
+    display: block;
+}
+
+/* Estructura base */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--hk-wiki-bg-dark);
+}
+
+.register-container {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.register-form {
+    background-color: var(--hk-wiki-bg-light);
+    padding: 2.5rem;
+    border-radius: var(--hk-wiki-border-radius);
+    box-shadow: var(--hk-wiki-box-shadow);
+    border-left: 4px solid var(--hk-wiki-purple-dark);
+}
+
+.register-form h2 {
+    color: var(--hk-wiki-accent);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+/* Sección de imagen de perfil */
+.profile-picture-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.profile-picture-preview {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: var(--hk-wiki-bg-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    border: 3px solid var(--hk-wiki-purple-light);
+}
+
+.profile-picture-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.default-icon {
+    font-size: 5rem;
+    color: var(--hk-wiki-text-secondary);
+}
+
+.upload-btn {
+    background-color: var(--hk-wiki-purple-dark);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: var(--hk-wiki-border-radius);
+    cursor: pointer;
+    transition: var(--hk-wiki-transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.upload-btn:hover {
+    background-color: var(--hk-wiki-purple-light);
+}
+
+/* Formulario */
+.form-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    flex: 1;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--hk-wiki-text-primary);
+    font-size: 0.9rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--hk-wiki-border);
+    background-color: var(--hk-wiki-bg-dark);
+    color: var(--hk-wiki-text-primary);
+    border-radius: var(--hk-wiki-border-radius);
+    font-size: 1rem;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--hk-wiki-purple-light);
+    box-shadow: 0 0 0 2px rgba(93, 91, 239, 0.2);
+}
+
+/* Botón de registro */
+.register-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--hk-login-button);
+    color: #1a1a1a;
+    border: none;
+    border-radius: var(--hk-wiki-border-radius);
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--hk-wiki-transition);
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.register-btn:hover {
+    background-color: #ffd633;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Pie del formulario */
+.form-footer {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.form-footer p {
+    color: var(--hk-wiki-text-secondary);
+    margin-top: 1rem;
+}
+
+.form-footer a {
+    color: var(--hk-wiki-blue);
+    text-decoration: none;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
+
+.password-requirements {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background-color: var(--hk-wiki-bg-dark);
+    border-radius: var(--hk-wiki-border-radius);
+    font-size: 0.8rem;
+    color: var(--hk-wiki-text-primary)
+}
+
+.password-requirements ul {
+    margin: 0.3rem 0 0 0;
+    padding-left: 1.2rem;
+}
+
+.password-requirements li {
+    color: var(--hk-wiki-text-secondary);
+    list-style-type: none;
+    position: relative;
+    margin-bottom: 0.2rem;
+}
+
+.password-requirements li:before {
+    content: "✗";
+    color: #ff6b6b;
+    position: absolute;
+    left: -1.2rem;
+}
+
+.password-requirements li.valid:before {
+    content: "✓";
+    color: #51cf66;
+}
+
+/* Estilos para el campo de confirmación no válido */
+input:invalid {
+    border-color: #ff6b6b;
+}
+
+input:valid {
+    border-color: #51cf66;
+}
+
+/* En navbar.css */
+.nav-search input {
+    border-color: var(--hk-wiki-border) !important; /* Fuerza el color original */
+}
+
+/* Mensaje de error personalizado */
+.error-message {
+    color: #ff6b6b;
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+    display: none;
+}
+
+input:invalid + .error-message {
+    display: block;
+}
+
+/* Estilos para el error de imagen de perfil */
+.profile-picture-section {
+    position: relative;
+}
+.error-message {
+    color: #ff6b6b;
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+}
+
+#profileImageError {
+    text-align: center;
+    width: 100%;
+}
+#profileImageError {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+/* Ocultar mensaje por defecto */
+#profileImageError {
+    display: none;
+}
+
+/* Mostrar cuando sea inválido */
+input:invalid ~ #profileImageError {
+    display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .register-form {
+        padding: 1.5rem;
+    }
+}

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hollow Knight - Sly</title>
+    <link rel="stylesheet" href="../../CSS/navbar.css">
+    <link rel="stylesheet" href="../../CSS/footer.css">
+    <link rel="stylesheet" href="../../CSS/comentarios.css">
+    <link rel="stylesheet" href="../../CSS/NPCS/SLY.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="../index.html"><img src="../../IMAGENES/hk-logo.png" alt="Hollow Knight Logo" width="150" class="no-lightbox"></a>
+        </div>
+        <div class="nav-links">
+            <a href="../index.html">Inicio</a>
+            <a href="../NPC.html">NPCs</a>
+            <a href="../JEFES.html">Jefes</a>
+            <a href="../Mapa.html">Mapa</a>
+            <a href="../Lore.html">Lore</a>
+        </div>
+        <div class="nav-search">
+            <input type="text" placeholder="Buscar en la wiki...">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="nav-login">
+            <a href="../login.html">Iniciar sesión</a>
+        </div>
+    </nav>
+
+    <main class="npc-page">
+        <header class="npc-header">
+            <h1>SLY</h1>
+            <div class="npc-quote">
+                <img src="../../IMAGENES/IMAGENES NPCS/Dialogue_Top.webp" alt="Top-imagen" class="no-lightbox dialogue-top">
+                <blockquote>
+                    "¡Pequeño ser! ¡Qué sorpresa encontrar a alguien en este lugar olvidado! ¡Ven, ven! ¡Tengo mercancía que podría interesarte!"
+                    <footer>- Sly</footer>
+                </blockquote>
+                <img src="../../IMAGENES/IMAGENES NPCS/Dialogue_Bottom.webp" alt="Bottom-Imagen" class="no-lightbox dialogue-bottom">
+            </div>
+        </header>
+
+        <section class="npc-main-content">
+            <div class="npc-content-grid">
+                <!-- Columna izquierda con imagen y detalles -->
+                <div class="npc-left-column">
+                    <div class="npc-image-container">
+                        <img src="../../IMAGENES/IMAGENES NPCS/sly-character.png" alt="Sly" class="npc-main-image">
+                    </div>
+                    
+                    <div class="npc-details">
+                        <h2>DETALLES</h2>
+                        <div class="details-grid">
+                            <div class="detail-item">
+                                <h3>ESTADO</h3>
+                                <p>Activo</p>
+                            </div>
+                            <div class="detail-item">
+                                <h3>GÉNERO</h3>
+                                <p>Masculino</p>
+                            </div>
+                            <div class="detail-item">
+                                <h3>UBICACIÓN</h3>
+                                <p>Dirtmouth</p>
+                            </div>
+                            <div class="detail-item">
+                                <h3>FUNCIÓN</h3>
+                                <p>Tienda principal / Maestro de Nail Arts</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Columna derecha con información principal -->
+                <div class="npc-right-column">
+                    <div class="npc-info-section">
+                        <h2>DESCRIPCIÓN</h2>
+                        <p><strong>Sly</strong> es un NPC en <em>Hollow Knight</em> que actúa como el principal comerciante del juego. Es un pequeño insecto con una personalidad excéntrica y entusiasta, conocido por su tienda en Dirtmouth y su habilidad como maestro de las Nail Arts.</p>
+                        
+                        <h2>LORE</h2>
+                        <p>Sly es un misterioso comerciante que parece conocer más de lo que aparenta. En el pasado fue un poderoso guerrero y maestro de las Nail Arts, como se revela más adelante en el juego. A pesar de su pequeño tamaño, posee una gran habilidad en combate.</p>
+                        
+                        <!-- Sección de ubicación mejorada -->
+                        <div class="location-section">
+                            <h2>UBICACIÓN</h2>
+                            <div class="location-content">
+                                <div class="location-text">
+                                    <p>Sly se encuentra en:</p>
+                                    <div class="location-details">
+                                        <div class="detail-icon">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <span>Dirtmouth (tienda principal)</span>
+                                        </div>
+                                        <p>También puede encontrarse en:</p>
+                                        <ul class="stations-list">
+                                            <li class="requirement-with-image">
+                                                <div class="requirement-content">
+                                                    <div class="requirement-icon-text">
+                                                        <i class="fas fa-key"></i>
+                                                        <span>Tienda inicial en Forgotten Crossroads (requiere Llave Simple)</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="requirement-with-image">
+                                                <div class="requirement-content">
+                                                    <div class="requirement-icon-text">
+                                                        <i class="fas fa-home"></i>
+                                                        <span>Posteriormente se traslada a Dirtmouth</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="location-image-container">
+                                    <img src="../../IMAGENES/IMAGENES NPCS/SLY/Mapshot_HK_Simple_Key_1.webp" alt="Ubicación de Sly" class="location-image">
+                                    <p class="image-caption">Tienda de Sly en Dirtmouth</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="npc-interactions">
+            <div class="interaction-header" id="interactionHeader">
+                <h2>TIENDA</h2>
+                <i class="fas fa-chevron-down accordion-icon" id="accordionIcon"></i>
+            </div>
+            
+            <div class="interaction-content" id="interactionContent">
+                <p>Sly ofrece una variedad de objetos esenciales para la aventura:</p>
+                
+                <div class="service-container">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <img src="../../IMAGENES/IMAGENES NPCS/SLY/Map_Pin_Sly.webp" alt="Tienda de Sly" class="service-image">
+                        </div>
+                        <div class="service-details">
+                            <h3>Mercancía de Sly</h3>
+                            <div class="requirement-container">
+                                <span class="requirement">Requisito: Tener suficiente Geo</span>
+                                <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp" alt="Geo" class="requirement-icon">
+                            </div>
+                            <p class="service-description">Objetos esenciales y mejoras para la aventura</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-info">
+                        <h3>Productos Disponibles</h3>  
+                        <div class="product-category">
+                            <h4><i class="fas fa-tools"></i> Mejoras</h4>
+                            <div class="product-grid">
+                                <!--Huevos rancios -->
+                                <div class="product-item">
+                                    <div class="product-image-container">
+                                        <img src="../../IMAGENES/IMAGENES NPCS/SLY/Rancid_Egg.webp" alt="Corazón Frágil" class="product-image">
+                                    </div>
+                                    <div class="product-details">
+                                        <h5>Huevo rancio</h5>
+                                        <div class="product-price">
+                                            <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp" alt="Geo" class="price-icon">
+                                            <span>120 Geo</span>
+                                        </div>
+                                        <p class="product-description">Se obtiene de los Bluggsacs, ya sea encontrando uno muerto o matando a uno vivo. Una vez muerto, el Bluggsac no revive, ni siquiera al descansar en un Banco.</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Fragile Greed -->
+                                <div class="product-item">
+                                    <div class="product-image-container">
+                                        <img src="../../IMAGENES/IMAGENES NPCS/SLY/Lumafly_Lantern.webp" alt="Codicia Frágil" class="product-image">
+                                    </div>
+                                    <div class="product-details">
+                                        <h5>Linterna de luciérnaga</h5>
+                                        <div class="product-price">
+                                            <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp" alt="Geo" class="price-icon">
+                                            <span>250 Geo</span>
+                                        </div>
+                                        <p class="product-description">Fuente de luz portátil de Hallownest.</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Fragile Strength -->
+                                <div class="product-item">
+                                    <div class="product-image-container">
+                                        <img src="../../IMAGENES/IMAGENES NPCS/SLY/Gathering_Swarm.webp" alt="Fuerza Frágil" class="product-image">
+                                    </div>
+                                    <div class="product-details">
+                                        <h5>Engambre Recolector</h5>
+                                        <div class="product-price">
+                                            <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp" alt="Geo" class="price-icon">
+                                            <span>600 Geo</span>
+                                        </div>
+                                        <p class="product-description">Recolecta geo automáticamente.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Fragile Strength -->
+                                <div class="product-item">
+                                    <div class="product-image-container">
+                                        <img src="../../IMAGENES/IMAGENES NPCS/SLY/Stalwart_Shell.webp" alt="Fuerza Frágil" class="product-image">
+                                    </div>
+                                    <div class="product-details">
+                                        <h5>Caparazón Robusto</h5>
+                                        <div class="product-price">
+                                            <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp" alt="Geo" class="price-icon">
+                                            <span>600 Geo</span>
+                                        </div>
+                                        <p class="product-description">Invulnerabilidad tras daño prolongada.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Fragile Strength -->
+                                <div class="product-item">
+                                    <div class="product-image-container">
+                                        <img src="../../IMAGENES/IMAGENES NPCS/SLY/Heavy_Blow.webp" alt="Fuerza Frágil" class="product-image">
+                                    </div>
+                                    <div class="product-details">
+                                        <h5>Duro golpe</h5>
+                                        <div class="product-price">
+                                            <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp" alt="Geo" class="price-icon">
+                                            <span>600 Geo</span>
+                                        </div>
+                                        <p class="product-description">Mayor daño con el aguijón.</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Llave simple -->
+                                <div class="product-item">
+                                    <div class="product-image-container">
+                                        <img src="../../IMAGENES/IMAGENES NPCS/SLY/Elegant_Key.webp" alt="Llave elegante" class="product-image">
+                                    </div>
+                                    <div class="product-details">
+                                        <h5>Llave elegante</h5>
+                                        <div class="product-price">
+                                            <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp" alt="Geo" class="price-icon">
+                                            <span>950 Geo</span>
+                                        </div>
+                                        <p class="product-description">Abre la puerta cerrada que contiene el hechizo Alma Sombría en el Santuario del Alma, en City of Tears.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Llave simple -->
+                                <div class="product-item">
+                                    <div class="product-image-container">
+                                        <img src="../../IMAGENES/IMAGENES NPCS/SLY/Simple_Key.webp" alt="Llave elegante" class="product-image">
+                                    </div>
+                                    <div class="product-details">
+                                        <h5>Llave simple</h5>
+                                        <div class="product-price">
+                                            <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp" alt="Geo" class="price-icon">
+                                            <span>800 Geo</span>
+                                        </div>
+                                        <p class="product-description">Abre cerraduras simples por todo Hallownest.</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Cresta de cazador -->
+                                <div class="product-item">
+                                    <div class="product-image-container">
+                                        <img src="../../IMAGENES/IMAGENES NPCS/SLY/Health_Piece.webp" alt="Cresta del cazador" class="product-image">
+                                    </div>
+                                    <div class="product-details">
+                                        <h5>Fragmento de máscara</h5>
+                                        <div class="product-price">
+                                            <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp" alt="Geo" class="price-icon">
+                                            <span>600 Geo</span>
+                                        </div>
+                                        <p class="product-description">Aumento de salud permanente</p>
+                                    </div>
+                                </div>
+
+                                <!-- Cresta de cazador -->
+                                <div class="product-item">
+                                    <div class="product-image-container">
+                                        <img src="../../IMAGENES/IMAGENES NPCS/SLY/Vessel_Fragment.webp" alt="Cresta del cazador" class="product-image">
+                                    </div>
+                                    <div class="product-details">
+                                        <h5>Fragmento de Recipiente</h5>
+                                        <div class="product-price">
+                                            <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp" alt="Geo" class="price-icon">
+                                            <span>750 Geo</span>
+                                        </div>
+                                        <p class="product-description">Aumento de reserva de alma.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Cresta de cazador -->
+                                <div class="product-item">
+                                    <div class="product-image-container">
+                                        <img src="../../IMAGENES/IMAGENES NPCS/SLY/Sprintmaster.webp" alt="Cresta del cazador" class="product-image">
+                                    </div>
+                                    <div class="product-details">
+                                        <h5>Maestro del Sprint</h5>
+                                        <div class="product-price">
+                                            <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp" alt="Geo" class="price-icon">
+                                            <span>900 Geo</span>
+                                        </div>
+                                        <p class="product-description">Aumenta la velocidad de movimiento.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="service-info">
+                            <h3>Información Adicional</h3>
+                            <ul>
+                                <li>Después de comprar todos sus objetos, Sly revela su verdadera identidad como <strong>El Gran Nailsage</strong></li>
+                                <li>Puedes luchar contra Sly en el <strong>Panteón de Hallownest</strong> después de completar ciertos requisitos</li>
+                                <li>Sly vende objetos diferentes en diferentes momentos del juego</li>
+                                <li>Su tienda inicial en Forgotten Crossroads requiere una <strong>Llave Simple</strong> para acceder</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="npc-trivia">
+            <div class="trivia-header" id="triviaHeader">
+                <h2>CURIOSIDADES</h2>
+                <i class="fas fa-chevron-down accordion-icon" id="triviaAccordionIcon"></i>
+            </div>
+            
+            <div class="trivia-content" id="triviaContent">
+                <div class="trivia-item">
+                    <h3>DISEÑO</h3>
+                    <p>Sly tiene un diseño único entre los NPCs del juego, con su pequeño tamaño y capa característica. Su apariencia simple contrasta con su habilidad como guerrero.</p>
+                </div>
+                <div class="trivia-item">
+                    <h3>PERSONALIDAD</h3>
+                    <p>Sly es excéntrico y entusiasta, hablando con frases cortas y exclamaciones. A pesar de su apariencia inofensiva, es un maestro guerrero.</p>
+                </div>
+                <div class="trivia-item">
+                    <h3>NAIL ARTS</h3>
+                    <p>Después de comprar el arte del aguijón Cyclone Slash, Sly revela que era conocido como "El Gran Nailsage" y enseña las poderosas Nail Arts al jugador.</p>
+                </div>
+                <div class="trivia-item">
+                    <h3>RELACIÓN CON EL LORE</h3>
+                    <p>Sly es uno de los pocos personajes que parece recordar su pasado antes de la caída de Hallownest, sugiriendo que podría ser más antiguo de lo que aparenta.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="npc-gallery">
+            <h2>GALERÍA</h2>
+            <div class="gallery-container">
+                <!-- Imagen 1 -->
+                <div class="gallery-card">
+                    <div class="gallery-image-container">
+                        <img src="../../IMAGENES/IMAGENES NPCS/SLY/Dirtmouth_Slys_Store.webp" alt="Interior de la tienda de Sly" class="gallery-image">
+                    </div>
+                    <div class="gallery-caption">
+                        <p>Interior de la tienda de Sly en Dirtmouth.</p>
+                    </div>
+                </div>
+                
+                <!-- Imagen 2 -->
+                <div class="gallery-card">
+                    <div class="gallery-image-container">
+                        <img src="../../IMAGENES/IMAGENES NPCS/SLY/Dirtmouth_Sly_Basement.webp" alt="Sotano de la tienda de Sly" class="gallery-image">
+                    </div>
+                    <div class="gallery-caption">
+                        <p>Sotano de la tienda de Sly.</p>
+                    </div>
+                </div>
+                
+                <!-- Imagen 3 -->
+                <div class="gallery-card">
+                    <div class="gallery-image-container">
+                        <img src="../../IMAGENES/IMAGENES NPCS/SLY/Sly_WJ.webp" alt="Descripción de Sly en el Diario del Errante" class="gallery-image">
+                    </div>
+                    <div class="gallery-caption">
+                        <p>Descripción de Sly en el Diario del Errante.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <section class="comments-section">
+        <h2>Comentarios</h2>
+        
+        <form class="comment-form" id="commentForm">
+            <h3>Deja tu comentario</h3>
+            <div class="form-group">
+                <label for="comment">Comentario:</label>
+                <textarea id="comment" name="comment" rows="4" required placeholder="Escribe tu comentario aquí..."></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Enviar comentario</button>
+        </form>
+        <div class="comments-list" id="commentsList">
+            <div class="comment">
+                <div class="comment-header">
+                    <img src="../IMAGENES/default-avatar.png" alt="Avatar" class="comment-avatar">
+                    <div class="comment-user">
+                        <span class="username">NailMaster123</span>
+                        <span class="comment-date">15/01/2023</span>
+                    </div>
+                </div>
+                <div class="comment-content">
+                    <p>¡Sly es mi NPC favorito! Su transformación de pequeño comerciante a Gran Nailsage fue una de las mejores sorpresas del juego.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>© 2023 Hollow Knight Wiki. Todos los derechos reservados a Team Cherry.</p>
+    </footer>
+    <script src="../../JS/NPC/imagenes.js"></script>
+    <script src="../../JS/NPC/JINN/acordeon-Interacciones.js"></script>
+    <script src="../../JS/NPC/fade-in.js"></script>
+</body>
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hollow Knight - Salubra</title>
+    <link rel="stylesheet" href="../../CSS/navbar.css">
+    <link rel="stylesheet" href="../../CSS/footer.css">
+    <link rel="stylesheet" href="../../CSS/comentarios.css">
+    <link rel="stylesheet" href="../../CSS/NPCS/SALUBRA.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="../index.html"><img src="../../IMAGENES/hk-logo.png" alt="Hollow Knight Logo" width="150" class="no-lightbox"></a>
+        </div>
+        <div class="nav-links">
+            <a href="../index.html">Inicio</a>
+            <a href="../NPC.html">NPCs</a>
+            <a href="../JEFES.html">Jefes</a>
+            <a href="../Mapa.html">Mapa</a>
+            <a href="../Lore.html">Lore</a>
+        </div>
+        <div class="nav-search">
+            <input type="text" placeholder="Buscar en la wiki...">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="nav-login">
+            <a href="../login.html">Iniciar sesión</a>
+        </div>
+    </nav>
+
+    <main class="npc-page">
+        <header class="npc-header">
+            <h1>SALUBRA</h1>
+            <div class="npc-quote">
+                <img src="../../IMAGENES/IMAGENES NPCS/Dialogue_Top.webp" alt="Top-imagen" class="no-lightbox dialogue-top">
+                <blockquote>
+                    "Veo que has empezado tu propia colección. ¡Muy bonito! Te mostraré algunas de las mías, ¡y puedes llevarte una a casa si quieres!."
+                    <footer>- Salubra</footer>
+                </blockquote>
+                <img src="../../IMAGENES/IMAGENES NPCS/Dialogue_Bottom.webp" alt="Bottom-Imagen" class="no-lightbox dialogue-bottom">
+            </div>
+        </header>
+
+        <section class="npc-main-content">
+            <div class="npc-content-grid">
+                <!-- Columna izquierda con imagen y detalles -->
+                <div class="npc-left-column">
+                    <div class="npc-image-container">
+                        <img src="../../IMAGENES/IMAGENES NPCS/Salubra.png" alt="Salubra" class="npc-main-image">
+                    </div>
+                    
+                    <div class="npc-details">
+                        <h2>DETALLES</h2>
+                        <div class="details-grid">
+                            <div class="detail-item">
+                                <h3>ESTADO</h3>
+                                <p>Activa</p>
+                            </div>
+                            <div class="detail-item">
+                                <h3>GÉNERO</h3>
+                                <p>Femenino</p>
+                            </div>
+                            <div class="detail-item">
+                                <h3>UBICACIÓN</h3>
+                                <p>Forgotten Crossroads</p>
+                            </div>
+                            <div class="detail-item">
+                                <h3>FUNCIÓN</h3>
+                                <p>Vendedora de Encantamientos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Columna derecha con información principal -->
+                <div class="npc-right-column">
+                    <div class="npc-info-section">
+                        <h2>DESCRIPCIÓN</h2>
+                        <p><strong>Salubra</strong> es una NPC en <em>Hollow Knight</em> que vende encantamientos y objetos especiales. Es una vendedora excéntrica y alegre que habla en tercera persona y tiene una risa característica.</p>
+                        
+                        <h2>LORE</h2>
+                        <p>Salubra es una de las pocas residentes de Forgotten Crossroads que parece no haber sido afectada por la infección. Su tienda está llena de objetos misteriosos y encantamientos poderosos que solo ella parece entender completamente.</p>
+                        
+                        <!-- Sección de ubicación mejorada -->
+                        <div class="location-section">
+                            <h2>UBICACIÓN</h2>
+                            <div class="location-content">
+                                <div class="location-text">
+                                    <p>Salubra se encuentra en:</p>
+                                    <div class="location-details">
+                                        <div class="detail-icon">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <span>Forgotten Crossroads</span>
+                                        </div>
+                                        <p>Requisitos para acceder:</p>
+                                        <ul class="stations-list">
+                                            <li class="requirement-with-image">
+                                                <div class="requirement-content">
+                                                    <div class="requirement-icon-text">
+                                                        <i class="fas fa-door-open"></i>
+                                                        <span>Requiere el Manto de Alas</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="requirement-with-image">
+                                                <div class="requirement-content">
+                                                    <div class="requirement-icon-text">
+                                                        <i class="fas fa-coins"></i>
+                                                        <span>200 Geo para abrir la puerta</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="location-image-container">
+                                    <img src="../../IMAGENES/IMAGENES NPCS/SALUBRA/Mapshot_HK_Salubra_01.webp" alt="Ubicación de Salubra" class="location-image">
+                                    <p class="image-caption">Ubicación en Forgotten Crossroads</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="npc-interactions">
+            <div class="interaction-header" id="interactionHeader">
+                <h2>TIENDA</h2>
+                <i class="fas fa-chevron-down accordion-icon" id="accordionIcon"></i>
+            </div>
+            
+            <div class="interaction-content" id="interactionContent">
+                <p>Salubra ofrece una variedad de encantamientos y objetos únicos:</p>
+                
+                <div class="service-container">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <img src="../../IMAGENES/IMAGENES NPCS/SALUBRA/Map_Pin_Salubra.webp" alt="Tienda de Salubra" class="service-image">
+                        </div>
+                        <div class="service-details">
+                            <h3>Mercancía de Salubra</h3>
+                            <div class="requirement-container">
+                                <span class="requirement">Requisito: Tener suficiente Geo</span>
+                                <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp"" alt="Geo" class="requirement-icon">
+                            </div>
+                            <p class="service-description">Encantamientos poderosos y objetos especiales</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-info">
+                        <h3>Productos Disponibles</h3>
+                        
+                        <div class="product-category">
+                            <h4><i class="fas fa-magic"></i> Encantamientos</h4>
+                            <div class="product-grid">
+                                <!-- Bendición de Salubra -->
+                                <div class="product-item">
+                                    <div class="product-image-container">
+                                        <img src="../../IMAGENES/IMAGENES NPCS/SALUBRA/Blessing.webp" alt="Bendición de Salubra" class="product-image">
+                                    </div>
+                                    <div class="product-details">
+                                        <h5>Bendición de Salubra</h5>
+                                        <div class="product-price">
+                                            <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp" alt="Geo" class="price-icon">
+                                            <span>800 Geo</span>
+                                        </div>
+                                        <p class="product-description">Cura al Caballero automáticamente cuando está a punto de morir</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Canción de Sanación -->
+                                <div class="product-item">
+                                    <div class="product-image-container">
+                                        <img src="../../IMAGENES/IMAGENES NPCS/SALUBRA/Quick_Focus.webp" alt="Canción de Sanación" class="product-image">
+                                    </div>
+                                    <div class="product-details">
+                                        <h5>Canción de Sanación</h5>
+                                        <div class="product-price">
+                                            <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp" alt="Geo" class="price-icon">
+                                            <span>150 Geo</span>
+                                        </div>
+                                        <p class="product-description">Reduce el tiempo necesario para concentrarse</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Corazón Frágil -->
+                                <div class="product-item">
+                                    <div class="product-image-container">
+                                        <img src="../../IMAGENES/IMAGENES NPCS/SALUBRA/Lifeblood_Heart.webp" alt="Corazón Frágil" class="product-image">
+                                    </div>
+                                    <div class="product-details">
+                                        <h5>Corazón Frágil</h5>
+                                        <div class="product-price">
+                                            <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp" alt="Geo" class="price-icon">
+                                            <span>120 Geo</span>
+                                        </div>
+                                        <p class="product-description">Aumenta la salud máxima (se rompe al morir)</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Greed -->
+                                <div class="product-item">
+                                    <div class="product-image-container">
+                                        <img src="../../IMAGENES/IMAGENES NPCS/SALUBRA/Steady_Body.webp" alt="Greed" class="product-image">
+                                    </div>
+                                    <div class="product-details">
+                                        <h5>Cuerpo rigido</h5>
+                                        <div class="product-price">
+                                            <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp" alt="Geo" class="price-icon">
+                                            <span>250 Geo</span>
+                                        </div>
+                                        <p class="product-description">Úsalo y podrás mantenerte firmemente en tu lugar al blandir tu pequeña uña.</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Strength -->
+                                <div class="product-item">
+                                    <div class="product-image-container">
+                                        <img src="../../IMAGENES/IMAGENES NPCS/SALUBRA/Shaman_Stone.webp" alt="Strength" class="product-image">
+                                    </div>
+                                    <div class="product-details">
+                                        <h5>Piedra del Shaman</h5>
+                                        <div class="product-price">
+                                            <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp" alt="Geo" class="price-icon">
+                                            <span>600 Geo</span>
+                                        </div>
+                                        <p class="product-description">Aumenta el daño del Aguijón</p>
+                                    </div>
+                                </div>
+
+                                <!-- Strength -->
+                                <div class="product-item">
+                                    <div class="product-image-container">
+                                        <img src="../../IMAGENES/IMAGENES NPCS/SALUBRA/Longnail.webp" alt="Strength" class="product-image">
+                                    </div>
+                                    <div class="product-details">
+                                        <h5>Largoaguijon</h5>
+                                        <div class="product-price">
+                                            <img src="../../IMAGENES/IMAGENES ITEMS/Geo.webp" alt="Geo" class="price-icon">
+                                            <span>600 Geo</span>
+                                        </div>
+                                        <p class="product-description">Aumenta el rango del golpe del aguijon.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="service-info">
+                            <h3>Información Adicional</h3>
+                            <ul>
+                                <li>Salubra ofrece <strong>descuentos</strong> si compras múltiples objetos</li>
+                                <li>Al comprar todos sus encantamientos, otorga un <strong>objeto especial</strong></li>
+                                <li>Su tienda es una de las pocas que permanece <strong>abierta</strong> durante toda la partida</li>
+                                <li>Tiene diálogos únicos cuando compras ciertos objetos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="npc-trivia">
+            <div class="trivia-header" id="triviaHeader">
+                <h2>CURIOSIDADES</h2>
+                <i class="fas fa-chevron-down accordion-icon" id="triviaAccordionIcon"></i>
+            </div>
+            
+            <div class="trivia-content" id="triviaContent">
+                <div class="trivia-item">
+                    <h3>DISEÑO</h3>
+                    <p>Su diseño está inspirado en vendedoras excéntricas y brujas benevolentes, con un colorido atuendo que contrasta con el ambiente sombrío de Ciudad de Lágrimas.</p>
+                </div>
+                <div class="trivia-item">
+                    <h3>PERSONALIDAD</h3>
+                    <p>A diferencia de otros NPCs, Salubra mantiene una actitud alegre y optimista, hablando en tercera persona y riendo con frecuencia.</p>
+                </div>
+                <div class="trivia-item">
+                    <h3>DIÁLOGOS ÚNICOS</h3>
+                    <p>Tiene frases diferentes para cada objeto que vende, describiendo sus propiedades con un lenguaje colorido y misterioso.</p>
+                </div>
+                <div class="trivia-item">
+                    <h3>RELACIÓN CON EL LORE</h3>
+                    <p>Se especula que Salubra podría ser una de las "moscas" mencionadas en el lore del juego, aunque su verdadero origen permanece misterioso.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="npc-gallery">
+            <h2>GALERÍA</h2>
+            <div class="gallery-container">
+                <!-- Imagen 1 -->
+                <div class="gallery-card">
+                    <div class="gallery-image-container">
+                        <img src="../../IMAGENES/IMAGENES NPCS/SALUBRA/Forgotten_Crossroads_Salubra_Store_Exterior.webp" alt="Exterior de la tienda de Salubra" class="gallery-image">
+                    </div>
+                    <div class="gallery-caption">
+                        <p>Exterior de la tienda de Salubra.</p>
+                    </div>
+                </div>
+                
+                <!-- Imagen 2 -->
+                <div class="gallery-card">
+                    <div class="gallery-image-container">
+                        <img src="../../IMAGENES/IMAGENES NPCS/SALUBRA/Forgotten_Crossroads_Salubra_Shop_Interior.webp" alt="Interior de la tienda de Salubra" class="gallery-image">
+                    </div>
+                    <div class="gallery-caption">
+                        <p>Interior de la tienda de Salubra.</p>
+                    </div>
+                </div>
+                
+                <!-- Imagen 3 -->
+                <div class="gallery-card">
+                    <div class="gallery-image-container">
+                        <img src="../../IMAGENES/IMAGENES NPCS/SALUBRA/Salubra_Kiss.webp" alt="Bendición de Salubra" class="gallery-image">
+                    </div>
+                    <div class="gallery-caption">
+                        <p>Bendición de Salubra</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <section class="comments-section">
+        <h2>Comentarios</h2>
+        
+        <form class="comment-form" id="commentForm">
+            <h3>Deja tu comentario</h3>
+            <div class="form-group">
+                <label for="comment">Comentario:</label>
+                <textarea id="comment" name="comment" rows="4" required placeholder="Escribe tu comentario aquí..."></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Enviar comentario</button>
+        </form>
+        <div class="comments-list" id="commentsList">
+            <div class="comment">
+                <div class="comment-header">
+                    <img src="../IMAGENES/default-avatar.png" alt="Avatar" class="comment-avatar">
+                    <div class="comment-user">
+                        <span class="username">ExploradorHallownest</span>
+                        <span class="comment-date">20/12/2023</span>
+                    </div>
+                </div>
+                <div class="comment-content">
+                    <p>¡La Bendición de Salubra me salvó en múltiples ocasiones! Vale cada Geo que cuesta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>© 2023 Hollow Knight Wiki. Todos los derechos reservados a Team Cherry.</p>
+    </footer>
+    <script src="../../JS/NPC/imagenes.js"></script>
+    <script src="../../JS/NPC/JINN/acordeon-Interacciones.js"></script>
+    <script src="../../JS/NPC/fade-in.js"></script>
+</body>
+</html>

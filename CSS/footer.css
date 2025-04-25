@@ -1,0 +1,30 @@
+/* Pie de página */
+:root {
+    /* Paleta de colores de la Wiki Oficial de Hollow Knight */
+    --hk-wiki-bg-dark: #1f1f1f;          /* Fondo oscuro principal */
+    --hk-wiki-bg-light: #2c2c2c;         /* Fondo de cajas */
+    --hk-wiki-purple-dark: #2c3282;      /* Púrpura oscuro (bordes) */
+    --hk-wiki-purple-light: #5d5bef;     /* Púrpura claro (destacados) */
+    --hk-wiki-blue: #4d79ff;             /* Azul para enlaces */
+    --hk-wiki-text-primary: #f8f8f8;     /* Texto principal */
+    --hk-wiki-text-secondary: #bbbbbb;   /* Texto secundario */
+    --hk-wiki-accent: #889eff;           /* Acentuaciones */
+    --hk-wiki-border: #3d3d3d;  
+    --hk-login-button: #ffc500;        
+
+    /* Variables de diseño */
+    --hk-wiki-border-radius: 5px;
+    --hk-wiki-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    --hk-wiki-transition: all 0.2s ease;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--hk-wiki-bg-light);
+    color: var(--hk-wiki-text-secondary);
+    margin-top: 40px;
+    border-top: 1px solid var(--hk-wiki-purple-dark);
+    clear: both;
+    font-size: 0.9em;
+}

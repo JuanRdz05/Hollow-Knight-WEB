@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hollow Knight - Dirtmouth</title>
+    <link rel="stylesheet" href="../../CSS/navbar.css">
+    <link rel="stylesheet" href="../../CSS/footer.css">
+    <link rel="stylesheet" href="../../CSS/comentarios.css">
+    <link rel="stylesheet" href="../../CSS/NPCS/ZOTE.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="../index.html"><img src="../../IMAGENES/hk-logo.png" alt="Hollow Knight Logo" width="150" class="no-lightbox"></a>
+        </div>
+        <div class="nav-links">
+            <a href="../index.html">Inicio</a>
+            <a href="../NPC.html">NPCs</a>
+            <a href="../JEFES.html">Jefes</a>
+            <a href="../Mapa.html">Mapa</a>
+            <a href="../Lore.html">Lore</a>
+        </div>
+        <div class="nav-search">
+            <input type="text" placeholder="Buscar en la wiki...">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="nav-login">
+            <a href="../login.html">Iniciar sesión</a>
+        </div>
+    </nav>
+
+    <main class="npc-page">
+        <header class="npc-header">
+            <h1>DIRTMOUTH</h1>
+            <div class="npc-quote">
+                <img src="../../IMAGENES/IMAGENES NPCS/Dialogue_Top.webp" alt="Top-imagen" class="no-lightbox dialogue-top">
+                <blockquote>
+                    "(Un pueblo tranquilo al borde de un reino olvidado)"
+                    <footer>- Dirtmouth</footer>
+                </blockquote>
+                <img src="../../IMAGENES/IMAGENES NPCS/Dialogue_Bottom.webp" alt="Bottom-Imagen" class="no-lightbox dialogue-bottom">
+            </div>
+        </header>
+
+        <section class="npc-main-content">
+            <div class="npc-content-grid">
+                <div class="npc-left-column">
+                    <div class="npc-image-container">
+                        <img src="../../IMAGENES/IMAGENES AREAS/Dirtmouth_Map.webp" alt="Dirtmouth" class="npc-main-image">
+                    </div>
+
+                    <div class="npc-details">
+                        <h2>DETALLES</h2>
+                        <div class="details-grid">
+                            <div class="detail-item">
+                                <h3>TIPO</h3>
+                                <p>Pueblo</p>
+                            </div>
+                            <div class="detail-item">
+                                <h3>CONEXIONES</h3>
+                                <p>Forgotten Crossroads, Resting Grounds</p>
+                            </div>
+                            <div class="detail-item">
+                                <h3>PELIGROS</h3>
+                                <p>Inicialmente ninguno, pero puede verse afectado por la Infección</p>
+                            </div>
+                            <div class="detail-item">
+                                <h3>SIGNIFICADO</h3>
+                                <p>El último asentamiento en la superficie, habitado por supervivientes</p>
+                            </div>
+                        </div>
+                        <p class="footnote">*Un pequeño pueblo que sirve como punto de partida y refugio</p>
+                    </div>
+                </div>
+
+                <div class="npc-right-column">
+                    <div class="npc-info-section">
+                        <h2>DESCRIPCIÓN</h2>
+                        <p><strong>Dirtmouth</strong> es un pequeño y tranquilo pueblo ubicado en la superficie, justo encima de las ruinas del reino de Hallownest en <em>Hollow Knight</em>. Sirve como el punto de partida para el Caballero y como un lugar de refugio y encuentro con varios supervivientes y personajes a lo largo de su aventura.</p>
+
+                        <h2>LORE</h2>
+                        <p>Dirtmouth parece ser el último asentamiento habitado en la superficie, sus habitantes ajenos en gran medida a la tragedia que asola las profundidades de Hallownest. A medida que el Caballero interactúa con el reino caído, algunos individuos pueden llegar a Dirtmouth en busca de refugio o con sus propios propósitos.</p>
+
+                        <div class="location-section">
+                            <h2>UBICACIÓN</h2>
+                            <div class="location-content">
+                                <div class="location-text">
+                                    <p>Dirtmouth se encuentra:</p>
+                                    <div class="location-details">
+                                        <div class="detail-icon">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <span>Ubicación Principal</span>
+                                        </div>
+                                        <p>Acceso:</p>
+                                        <ul class="stations-list">
+                                            <li class="requirement-with-image">
+                                                <div class="requirement-content">
+                                                    <div class="requirement-icon-text">
+                                                        <i class="fas fa-arrow-down"></i>
+                                                        <span>Se accede directamente al inicio del juego.</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="requirement-with-image">
+                                                <div class="requirement-content">
+                                                    <div class="requirement-icon-text">
+                                                        <i class="fas fa-bed"></i>
+                                                        <span>Un camino se abre hacia Resting Grounds después de obtener una habilidad específica.</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="requirement-with-image">
+                                                <div class="requirement-content">
+                                                    <div class="requirement-icon-text">
+                                                        <i class="fas fa-train"></i>
+                                                        <span>La estación de tranvía puede ser reparada, ofreciendo acceso a otras áreas.</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="npc-interactions">
+            <div class="interaction-header" id="interactionHeader">
+                <h2>HABITANTES Y SERVICIOS</h2>
+                <i class="fas fa-chevron-down accordion-icon" id="accordionIcon"></i>
+            </div>
+
+            <div class="interaction-content" id="interactionContent">
+                <p>Dirtmouth alberga varios personajes que ofrecen servicios y compañía:</p>
+
+                <div class="service-container">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <img src="../../IMAGENES/IMAGENES NPCS/Elderbug-2.webp" alt="Elderbug" class="service-image">
+                        </div>
+                        <div class="service-details">
+                            <h3>Elderbug</h3>
+                            <p class="service-description">Un anciano sabio que ofrece consejos y lore sobre Hallownest.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <img src="../../IMAGENES/IMAGENES NPCS/Iselda.webp" alt="Iselda" class="service-image">
+                        </div>
+                        <div class="service-details">
+                            <h3>Iselda</h3>
+                            <p class="service-description">La dueña de una tienda que vende mapas y otros útiles.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <img src="../../IMAGENES/IMAGENES NPCS/Cornifer.webp" alt="Cornifer" class="service-image">
+                        </div>
+                        <div class="service-details">
+                            <h3>Cornifer</h3>
+                            <p class="service-description">El cartógrafo que vende mapas de las diferentes áreas de Hallownest (eventualmente se muda aquí).</p>
+                        </div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <img src="../../IMAGENES/IMAGENES NPCS/sly-character.png" alt="Sly" class="service-image">
+                        </div>
+                        <div class="service-details">
+                            <h3>Sly</h3>
+                            <p class="service-description">Un mercader que vende varios objetos y amuletos (llega más tarde).</p>
+                        </div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <img src="../../IMAGENES/IMAGENES NPCS/Bretta.webp" alt="Bretta" class="service-image">
+                        </div>
+                        <div class="service-details">
+                            <h3>Bretta</h3>
+                            <p class="service-description">Una soñadora que puede ser rescatada y se muda al pueblo.</p>
+                        </div>
+                    </div>
+                </div>
+                <p>Dirtmouth sirve como un centro para interactuar con personajes importantes y prepararse para la exploración.</p>
+            </div>
+        </section>
+
+        <section class="npc-trivia">
+            <div class="trivia-header" id="triviaHeader">
+                <h2>CURIOSIDADES</h2>
+                <i class="fas fa-chevron-down accordion-icon" id="triviaAccordionIcon"></i>
+            </div>
+
+            <div class="trivia-content" id="triviaContent">
+                <div class="trivia-item">
+                    <h3>PUNTO DE INICIO</h3>
+                    <p>Es la primera área que el jugador explora al comenzar el juego.</p>
+                </div>
+                <div class="trivia-item">
+                    <h3>EVOLUCIÓN DEL PUEBLO</h3>
+                    <p>A medida que avanza el juego, nuevos personajes pueden llegar a Dirtmouth.</p>
+                </div>
+                <div class="trivia-item">
+                    <h3>VISTAS PANORÁMICAS</h3>
+                    <p>Ofrece vistas del paisaje desolado que rodea Hallownest.</p>
+                </div>
+                <div class="trivia-item">
+                    <h3>TRANSICIÓN A LAS PROFUNDIDADES</h3>
+                    <p>Sirve como puerta de entrada al reino subterráneo.</p>
+                </div>
+                <div class="trivia-item">
+                    <h3>MÚSICA TRANQUILA Y MELANCÓLICA</h3>
+                    <p>La banda sonora de Dirtmouth establece un tono de calma y misterio.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="npc-gallery">
+            <h2>GALERÍA</h2>
+            <div class="gallery-container">
+                <div class="gallery-card">
+                    <div class="gallery-image-container">
+                        <img src="../../IMAGENES/IMAGENES NPCS/DIRTMOUTH/Dirtmouth_Stagstation_Entrance.webp" alt="Arte de Dirtmouth" class="gallery-image">
+                    </div>
+                    <div class="gallery-caption">
+                        <p>Estación del Ultimo Ciervo.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <div class="gallery-image-container">
+                        <img src="../../IMAGENES/IMAGENES NPCS/DIRTMOUTH/Dirtmouth_Grimm_Troupe_Centre.webp" alt="Dirtmouth en el juego" class="gallery-image">
+                    </div>
+                    <div class="gallery-caption">
+                        <p>Pueblo de Dirtmouth.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <div class="gallery-image-container">
+                        <img src="../../IMAGENES/IMAGENES NPCS/DIRTMOUTH/Dirtmouth_Grimm_Troupe_Tents_Exterior.webp" alt="Arte de Elderbug" class="gallery-image">
+                    </div>
+                    <div class="gallery-caption">
+                        <p>Exterior de la tienda de Grimm.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="comments-section">
+        <h2>Comentarios</h2>
+
+        <form class="comment-form" id="commentForm">
+            <h3>Deja tu comentario</h3>
+            <div class="form-group">
+                <label for="comment">Comentario:</label>
+                <textarea id="comment" name="comment" rows="4" required placeholder="Escribe tu comentario aquí..."></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Enviar comentario</button>
+        </form>
+        <div class="comments-list" id="commentsList">
+            <div class="comment">
+                <div class="comment-header">
+                    <img src="../IMAGENES/default-avatar.png" alt="Avatar" class="comment-avatar">
+                    <div class="comment-user">
+                        <span class="username">SurfaceDweller</span>
+                        <span class="comment-date">29/04/2025</span>
+                    </div>
+                </div>
+                <div class="comment-content">
+                    <p>Un lugar tranquilo para prepararse antes de descender. ¡Habla con Elderbug!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>© 2023 Hollow Knight Wiki. Todos los derechos reservados a Team Cherry.</p>
+    </footer>
+    <script src="../../JS/NPC/imagenes.js"></script>
+    <script src="../../JS/NPC/JINN/acordeon-Interacciones.js"></script>
+    <script src="../../JS/NPC/fade-in.js"></script>
+</body>
+</html>

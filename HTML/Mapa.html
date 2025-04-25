@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hollow Knight - Mapa</title>
+    <link rel="stylesheet" href="../CSS/navbar.css">
+    <link rel="stylesheet" href="../CSS/MAPA/mapa.css"> <!-- Nuevo archivo CSS para las áreas -->
+    <link rel="stylesheet" href="../CSS/comentarios.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="index.html"><img src="../IMAGENES/hk-logo.png" alt="Hollow Knight Logo" width="150"></a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="NPC.html">NPCs</a>
+            <a href="JEFES.html">Jefes</a>
+            <a href="#">Mapa</a>
+            <a href="Lore.html">Lore</a>
+        </div>
+        <div class="nav-search">
+            <input type="text" placeholder="Buscar en la wiki...">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="nav-login">
+            <a href="login.html">Iniciar sesión</a>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Mapa de Hallownest</h1>
+        <div class="full-map-container">
+            <img src="../IMAGENES/LORE/Map_Artwork.webp" alt="Mapa completo de Hallownest" class="full-map">
+            <p class="map-caption">Mapa completo del reino de Hallownest y sus alrededores</p>
+        </div>
+        
+        <section class="mapa-section">
+            <h2>Áreas principales</h2>
+            <h4>Las regiones centrales del reino</h4>
+            <div class="mapa-grid">
+                <a href="../HTML/ZONAS/Ancient-Basin.html" class="npc-card-link">
+                    <!-- Ancient Basin -->
+                <div class="mapa-card" data-area="Ancient Basin">
+                    <div class="mapa-image">
+                        <img src="../IMAGENES/IMAGENES AREAS/Ancient_Basin_Map.webp" alt="Ancient Basin">
+                    </div>
+                    <div class="mapa-info">
+                        <h3 class="mapa-name">Ancient Basin</h3>
+                        <div class="mapa-description">
+                            <p>Una zona profunda y antigua bajo la Ciudad de las Lágrimas, hogar de fuentes de Vida Pálida y criaturas olvidadas.</p>
+                            <div class="mapa-details">
+                                <p><strong>Jefes:</strong> Broken Vessel</p>
+                                <p><strong>NPCs:</strong> Pale Lurker</p>
+                                <p><strong>Conecta con:</strong> City of Tears, Royal Waterways</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            
+                <a href="../HTML/ZONAS/City-of-Tears.html" class="npc-card-link">
+                    <!-- City of Tears -->
+                <div class="mapa-card" data-area="City of Tears">
+                    <div class="mapa-image">
+                        <img src="../IMAGENES/IMAGENES AREAS/City_of_Tears_Map.webp" alt="City of Tears">
+                    </div>
+                    <div class="mapa-info">
+                        <h3 class="mapa-name">City of Tears</h3>
+                        <div class="mapa-description">
+                            <p>La capital de Hallownest, eternamente lluviosa, con magnífica arquitectura y los restos de su antigua gloria.</p>
+                            <div class="mapa-details">
+                                <p><strong>Jefes:</strong> Soul Master, Watcher Knights</p>
+                                <p><strong>NPCs:</strong> Nailsmith, Lemm</p>
+                                <p><strong>Conecta con:</strong> Ancient Basin, Royal Waterways</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                
+                <a href="../HTML/ZONAS/Crystal-Peak.html" class="npc-card-link">
+                    <!-- Crystal Peak -->
+                <div class="mapa-card" data-area="Crystal Peak">
+                    <div class="mapa-image">
+                        <img src="../IMAGENES/IMAGENES AREAS/Crystal_Peak_Map.webp" alt="Crystal Peak">
+                    </div>
+                    <div class="mapa-info">
+                        <h3 class="mapa-name">Crystal Peak</h3>
+                        <div class="mapa-description">
+                            <p>Una montaña brillante llena de cristales radiactivos y los restos de una operación minera.</p>
+                            <div class="mapa-details">
+                                <p><strong>Jefes:</strong> Crystal Guardian</p>
+                                <p><strong>NPCs:</strong> Myla (inicialmente)</p>
+                                <p><strong>Conecta con:</strong> Forgotten Crossroads, Resting Grounds</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                
+                <div></div>
+                <a href="../HTML/ZONAS/Forgotten-CrossRoads.html" class="npc-card-link">
+                    <!-- Forgotten Crossroads -->
+                <div class="mapa-card" data-area="Forgotten Crossroads">
+                    <div class="mapa-image">
+                        <img src="../IMAGENES/IMAGENES AREAS/Forgotten_Crossroads_Map.webp" alt="Forgotten Crossroads">
+                    </div>
+                    <div class="mapa-info">
+                        <h3 class="mapa-name">Forgotten Crossroads</h3>
+                        <div class="mapa-description">
+                            <p>El centro de Hallownest, ahora infestado, que conecta con muchas otras áreas del reino.</p>
+                            <div class="mapa-details">
+                                <p><strong>Jefes:</strong> False Knight, Gruz Mother</p>
+                                <p><strong>NPCs:</strong> Cornifer, Salubra</p>
+                                <p><strong>Conecta con:</strong> Greenpath, Fungal Wastes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            
+            </div>
+        </section>
+    
+        <section class="mapa-section">
+            <h2>Áreas naturales</h2>
+            <h4>Regiones con ecosistemas únicos</h4>
+            <div class="mapa-grid">
+                <a href="../HTML/ZONAS/Greenpath.html" class="npc-card-link">
+                    <!-- Greenpath -->
+                <div class="mapa-card" data-area="Greenpath">
+                    <div class="mapa-image">
+                        <img src="../IMAGENES/IMAGENES AREAS/Greenpath_Map.webp" alt="Greenpath">
+                    </div>
+                    <div class="mapa-info">
+                        <h3 class="mapa-name">Greenpath</h3>
+                        <div class="mapa-description">
+                            <p>Una exuberante jungla llena de vegetación y criaturas pacíficas, dominio de Unn.</p>
+                            <div class="mapa-details">
+                                <p><strong>Jefes:</strong> Hornet (1er encuentro)</p>
+                                <p><strong>NPCs:</strong> Moss Prophet</p>
+                                <p><strong>Conecta con:</strong> Queen's Gardens, Fog Canyon</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            
+                <a href="../HTML/ZONAS/Fungal-Wastes.html" class="npc-card-link">
+                    <!-- Fungal Wastes -->
+                <div class="mapa-card" data-area="Fungal Wastes">
+                    <div class="mapa-image">
+                        <img src="../IMAGENES/IMAGENES AREAS/Fungal_Wastes_Map.webp" alt="Fungal Wastes">
+                    </div>
+                    <div class="mapa-info">
+                        <h3 class="mapa-name">Fungal Wastes</h3>
+                        <div class="mapa-description">
+                            <p>Una zona llena de hongos bioluminiscentes y esporas flotantes, hogar de los Mantis.</p>
+                            <div class="mapa-details">
+                                <p><strong>Jefes:</strong> Mantis Lords</p>
+                                <p><strong>NPCs:</strong> Leg Eater, Cloth</p>
+                                <p><strong>Conecta con:</strong> Deepnest, City of Tears</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            
+                <a href="../HTML/ZONAS/Queen's-Gardens.html" class="npc-card-link">
+                    <!-- Queen's Gardens -->
+                <div class="mapa-card" data-area="Queen's Gardens">
+                    <div class="mapa-image">
+                        <img src="../IMAGENES/IMAGENES AREAS/Queens_Gardens_Map.webp" alt="Queen's Gardens">
+                    </div>
+                    <div class="mapa-info">
+                        <h3 class="mapa-name">Queen's Gardens</h3>
+                        <div class="mapa-description">
+                            <p>Jardines reales bien cuidados pero ahora abandonados, con vegetación controlada.</p>
+                            <div class="mapa-details">
+                                <p><strong>Jefes:</strong> Traitor Lord</p>
+                                <p><strong>NPCs:</strong> White Lady (parcialmente)</p>
+                                <p><strong>Conecta con:</strong> Greenpath, Fog Canyon</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <div></div>
+
+                <a href="../HTML/ZONAS/Howling-Clifs.html" class="npc-card-link">
+                    <!-- Howling Cliffs -->
+                <div class="mapa-card" data-area="Howling Cliffs">
+                    <div class="mapa-image">
+                        <img src="../IMAGENES/IMAGENES AREAS/Howling_Cliffs_Map.webp" alt="Howling Cliffs">
+                    </div>
+                    <div class="mapa-info">
+                        <h3 class="mapa-name">Howling Cliffs</h3>
+                        <div class="mapa-description">
+                            <p>Acantilados ventosos en el borde de Hallownest, con cuevas ocultas y secretos.</p>
+                            <div class="mapa-details">
+                                <p><strong>Jefes:</strong> Gorb</p>
+                                <p><strong>NPCs:</strong> Joni, Millibelle</p>
+                                <p><strong>Conecta con:</strong> Dirtmouth, Ancient Basin</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </section>
+    
+        <section class="mapa-section">
+            <h2>Áreas peligrosas</h2>
+            <h4>Regiones hostiles y desafiantes</h4>
+            <div class="mapa-grid">
+
+                <a href="../HTML/ZONAS/Deepnest.html" class="npc-card-link">
+                    <!-- Deepnest -->
+                <div class="mapa-card" data-area="Deepnest">
+                    <div class="mapa-image">
+                        <img src="../IMAGENES/IMAGENES AREAS/Deepnest_Map.webp" alt="Deepnest">
+                    </div>
+                    <div class="mapa-info">
+                        <h3 class="mapa-name">Deepnest</h3>
+                        <div class="mapa-description">
+                            <p>Una red oscura y traicionera de túneles habitados por arañas y otras criaturas peligrosas.</p>
+                            <div class="mapa-details">
+                                <p><strong>Jefes:</strong> Nosk</p>
+                                <p><strong>NPCs:</strong> Midwife</p>
+                                <p><strong>Conecta con:</strong> Fungal Wastes, Distant Village</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            
+                <a href="../HTML/ZONAS/Kingdom's-Edge.html" class="npc-card-link">
+                    <!-- Kingdom's Edge -->
+                <div class="mapa-card" data-area="Kingdom's Edge">
+                    <div class="mapa-image">
+                        <img src="../IMAGENES/IMAGENES AREAS/Kingdom's Edge.webp" alt="Kingdom's Edge">
+                    </div>
+                    <div class="mapa-info">
+                        <h3 class="mapa-name">Kingdom's Edge</h3>
+                        <div class="mapa-description">
+                            <p>El borde del reino, donde las cenizas caen constantemente y los guerreros prueban su valía.</p>
+                            <div class="mapa-details">
+                                <p><strong>Jefes:</strong> Hornet (2do encuentro), Hive Knight</p>
+                                <p><strong>NPCs:</strong> Little Fool, Oro</p>
+                                <p><strong>Conecta con:</strong> Ancient Basin, The Hive</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <a href="../HTML/ZONAS/Royal-Waterways.html" class="npc-card-link">
+                    <!-- Royal Waterways -->
+                <div class="mapa-card" data-area="Royal Waterways">
+                    <div class="mapa-image">
+                        <img src="../IMAGENES/IMAGENES AREAS/Royal_Waterways_Map.webp" alt="Royal Waterways">
+                    </div>
+                    <div class="mapa-info">
+                        <h3 class="mapa-name">Royal Waterways</h3>
+                        <div class="mapa-description">
+                            <p>Los sistemas de alcantarillado de la ciudad, llenos de residuos y criaturas repugnantes.</p>
+                            <div class="mapa-details">
+                                <p><strong>Jefes:</strong> Dung Defender, Flukemarm</p>
+                                <p><strong>NPCs:</strong> Tuk</p>
+                                <p><strong>Conecta con:</strong> City of Tears, Ancient Basin</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                
+                <div></div>
+                <a href="../HTML/ZONAS/The-Hive.html" class="npc-card-link">
+                    <!-- The Hive -->
+                <div class="mapa-card" data-area="The Hive">
+                    <div class="mapa-image">
+                        <img src="../IMAGENES/IMAGENES AREAS/The_Hive_Map.webp" alt="The Hive">
+                    </div>
+                    <div class="mapa-info">
+                        <h3 class="mapa-name">The Hive</h3>
+                        <div class="mapa-description">
+                            <p>Una colmena dorada escondida, llena de abejas guerreras y su preciosa miel.</p>
+                            <div class="mapa-details">
+                                <p><strong>Jefes:</strong> Hive Knight</p>
+                                <p><strong>NPCs:</strong> Hive Queen (muerta)</p>
+                                <p><strong>Conecta con:</strong> Kingdom's Edge</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </section>
+    
+        <section class="mapa-section">
+            <h2>Áreas espirituales</h2>
+            <h4>Regiones conectadas con lo onírico y lo divino</h4>
+            <div class="mapa-grid">
+
+                <a href="../HTML/ZONAS/Resting-Grounds.html" class="npc-card-link">
+                    <!-- Resting Grounds -->
+                <div class="mapa-card" data-area="Resting Grounds">
+                    <div class="mapa-image">
+                        <img src="../IMAGENES/IMAGENES AREAS/Resting_Grounds_Map.webp" alt="Resting Grounds">
+                    </div>
+                    <div class="mapa-info">
+                        <h3 class="mapa-name">Resting Grounds</h3>
+                        <div class="mapa-description">
+                            <p>El cementerio de Hallownest, donde descansan los espíritus y se guardan secretos ancestrales.</p>
+                            <div class="mapa-details">
+                                <p><strong>Jefes:</strong> Xero, Galien</p>
+                                <p><strong>NPCs:</strong> Seer, Grey Mourner</p>
+                                <p><strong>Conecta con:</strong> Crystal Peak, City of Tears</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                
+                <a href="../HTML/ZONAS/White-Palace.html" class="npc-card-link">
+                        <!-- White Palace -->
+                <div class="mapa-card" data-area="White Palace">
+                    <div class="mapa-image">
+                        <img src="../IMAGENES/IMAGENES AREAS/White_Palace_Map.webp" alt="White Palace">
+                    </div>
+                    <div class="mapa-info">
+                        <h3 class="mapa-name">White Palace</h3>
+                        <div class="mapa-description">
+                            <p>El palacio onírico del Rey Pálido, un desafío de plataformas extremo repleto de peligros.</p>
+                            <div class="mapa-details">
+                                <p><strong>Jefes:</strong> Pale King (solo en lore)</p>
+                                <p><strong>NPCs:</strong> Kingsmoulds</p>
+                                <p><strong>Conecta con:</strong> Solo accesible desde Ancient Basin</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+    
+                <a href="../HTML/ZONAS/The-Abyss.html" class="npc-card-link">
+                    <!-- Abyss -->
+                <div class="mapa-card" data-area="Abyss">
+                    <div class="mapa-image">
+                        <img src="../IMAGENES/IMAGENES AREAS/The_Abyss_Map.webp" alt="Abyss">
+                    </div>
+                    <div class="mapa-info">
+                        <h3 class="mapa-name">Abyss</h3>
+                        <div class="mapa-description">
+                            <p>El lugar más profundo y oscuro de Hallownest, donde yace el origen del Caballero.</p>
+                            <div class="mapa-details">
+                                <p><strong>Jefes:</strong> Shadow Lord (lore)</p>
+                                <p><strong>NPCs:</strong> Siblings</p>
+                                <p><strong>Conecta con:</strong> Ancient Basin</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            
+                <div></div>
+
+                <a href="../HTML/ZONAS/GodHome.html" class="npc-card-link">
+                    <!-- Godhome -->
+                <div class="mapa-card" data-area="Godhome">
+                    <div class="mapa-image">
+                        <img src="../IMAGENES/IMAGENES AREAS/Godhome_Map.webp" alt="Godhome">
+                    </div>
+                    <div class="mapa-info">
+                        <h3 class="mapa-name">Godhome</h3>
+                        <div class="mapa-description">
+                            <p>Un reino onírico donde los dioses son puestos a prueba en el Panteón de Hallownest.</p>
+                            <div class="mapa-details">
+                                <p><strong>Jefes:</strong> Todos (en los panteones)</p>
+                                <p><strong>NPCs:</strong> Godseeker</p>
+                                <p><strong>Conecta con:</strong> Solo accesible desde Junk Pit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </section>
+    
+        <section class="mapa-section">
+            <h2>Áreas especiales</h2>
+            <h4>Lugares únicos con mecánicas particulares</h4>
+            <div class="mapa-grid">
+                <a href="../HTML/ZONAS/Colosseum-of-fools.html" class="npc-card-link">
+                    <!-- Colosseum of Fools -->
+                <div class="mapa-card" data-area="Colosseum of Fools">
+                    <div class="mapa-image">
+                        <img src="../IMAGENES/IMAGENES AREAS/Colosseum_Of_Fools_Map.webp" alt="Colosseum of Fools">
+                    </div>
+                    <div class="mapa-info">
+                        <h3 class="mapa-name">Colosseum of Fools</h3>
+                        <div class="mapa-description">
+                            <p>Una arena donde los guerreros prueban su valía en combates sucesivos contra oleadas de enemigos.</p>
+                            <div class="mapa-details">
+                                <p><strong>Jefes:</strong> Varios (en pruebas)</p>
+                                <p><strong>NPCs:</strong> Little Fool</p>
+                                <p><strong>Conecta con:</strong> Kingdom's Edge</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <a href="../HTML/ZONAS/Dirtmouth.html" class="npc-card-link">
+                    <!-- Dirtmouth -->
+                <div class="mapa-card" data-area="Dirtmouth">
+                    <div class="mapa-image">
+                        <img src="../IMAGENES/IMAGENES AREAS/Dirtmouth_Map.webp" alt="Dirtmouth">
+                    </div>
+                    <div class="mapa-info">
+                        <h3 class="mapa-name">Dirtmouth</h3>
+                        <div class="mapa-description">
+                            <p>El tranquilo pueblo en la superficie que sirve como entrada a Hallownest y centro de operaciones.</p>
+                            <div class="mapa-details">
+                                <p><strong>Jefes:</strong> Ninguno</p>
+                                <p><strong>NPCs:</strong> Elderbug, Iselda, Sly</p>
+                                <p><strong>Conecta con:</strong> Forgotten Crossroads</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                
+                <a href="../HTML/ZONAS/Fog-Canyon.html" class="npc-card-link">
+                    <!-- Fog Canyon -->
+                <div class="mapa-card" data-area="Fog Canyon">
+                    <div class="mapa-image">
+                        <img src="../IMAGENES/IMAGENES AREAS/Fog_Canyon_Map.webp" alt="Fog Canyon">
+                    </div>
+                    <div class="mapa-info">
+                        <h3 class="mapa-name">Fog Canyon</h3>
+                        <div class="mapa-description">
+                            <p>Un área nebulosa llena de medusas flotantes y burbujas explosivas de gas.</p>
+                            <div class="mapa-details">
+                                <p><strong>Jefes:</strong> Uumuu</p>
+                                <p><strong>NPCs:</strong> Teacher's Archives (Monomon)</p>
+                                <p><strong>Conecta con:</strong> Queen's Gardens, Fungal Wastes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            
+                <div></div>
+                <a href="../HTML/ZONAS/Blue-lake.html" class="npc-card-link">
+                    <!-- Blue Lake -->
+                <div class="mapa-card" data-area="Blue Lake">
+                    <div class="mapa-image">
+                        <img src="../IMAGENES/IMAGENES AREAS/Blue_Lake_Map.webp" alt="Blue Lake">
+                    </div>
+                    <div class="mapa-info">
+                        <h3 class="mapa-name">Blue Lake</h3>
+                        <div class="mapa-description">
+                            <p>Un lago tranquilo y sereno que refleja el cielo, lugar de descanso final para algunos personajes.</p>
+                            <div class="mapa-details">
+                                <p><strong>Jefes:</strong> Ninguno</p>
+                                <p><strong>NPCs:</strong> Quirrel (eventualmente)</p>
+                                <p><strong>Conecta con:</strong> Dirtmouth, Resting Grounds</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            
+            </div>
+        </section>
+    </main>
+
+    <section class="comments-section">
+        <h2>Comentarios</h2>
+        
+        <form class="comment-form" id="commentForm">
+            <h3>Deja tu comentario</h3>
+            <div class="form-group">
+                <label for="comment">Comentario:</label>
+                <textarea id="comment" name="comment" rows="4" required placeholder="Escribe tu comentario aquí..."></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Enviar comentario</button>
+        </form>
+        <div class="comments-list" id="commentsList">
+            <div class="comment">
+                <div class="comment-header">
+                    <img src="../IMAGENES/default-avatar.png" alt="Avatar" class="comment-avatar">
+                    <div class="comment-user">
+                        <span class="username">UsuarioEjemplo</span>
+                        <span class="comment-date">20/11/2023</span>
+                    </div>
+                </div>
+                <div class="comment-content">
+                    <p>¡Este juego es increíble! La atmósfera de Hallownest es única.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>© 2023 Hollow Knight Wiki. Todos los derechos reservados a Team Cherry.</p>
+    </footer>
+</body>
+</html>

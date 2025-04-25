@@ -1,0 +1,464 @@
+:root {
+    /* Paleta de colores de la Wiki Oficial de Hollow Knight */
+    --hk-wiki-bg-dark: #1f1f1f;
+    --hk-wiki-bg-light: #2c2c2c;
+    --hk-wiki-purple-dark: #2c3282;
+    --hk-wiki-purple-light: #5d5bef;
+    --hk-wiki-blue: #4d79ff;
+    --hk-wiki-text-primary: #f8f8f8;
+    --hk-wiki-text-secondary: #bbbbbb;
+    --hk-wiki-accent: #889eff;
+    --hk-wiki-border: #3d3d3d;
+    --hk-login-button: #ffc500;
+
+    /* Variables de diseño */
+    --hk-wiki-border-radius: 5px;
+    --hk-wiki-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    --hk-wiki-transition: all 0.2s ease;
+}
+
+body {
+    overflow-x: hidden;
+    position: relative;
+    background-color: var(--hk-wiki-bg-dark);
+    color: var(--hk-wiki-text-primary);
+}
+
+html {
+    scroll-behavior: smooth;
+    height: auto !important;
+}
+
+.npc-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.npc-card-link:hover .npc-card {
+    /* Efectos hover que ya tengas */
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Estilos para el título principal */
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: var(--hk-wiki-accent);
+    position: relative;
+    padding: 20px 0;
+    margin: 30px auto;
+    max-width: 80%;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+h1:hover {
+    transform: translateY(-3px);
+    text-shadow: 0 2px 8px rgba(141, 160, 255, 0.4);
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--hk-wiki-purple-light), transparent);
+    border-radius: 50%;
+    filter: blur(1px);
+    transition: all 0.3s ease;
+}
+
+h1:hover::after {
+    width: 180px;
+    background: linear-gradient(90deg, transparent, var(--hk-wiki-purple-light), var(--hk-wiki-accent), transparent);
+}
+
+h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--hk-wiki-purple-dark), transparent);
+    transition: all 0.3s ease;
+}
+
+h1:hover::before {
+    width: 120px;
+}
+
+.descripcion {
+    color: var(--hk-wiki-text-secondary);
+    font-style: italic;
+    position: center;
+    margin: 10px 0;
+    padding: 0;
+    clear: both;
+}
+
+/* Sección de lore */
+.lore-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.lore-section h2, .lore-section h4 {
+    color: var(--hk-wiki-accent);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    border-bottom: 2px solid var(--hk-wiki-purple-dark);
+    padding-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.lore-section h2:hover {
+    transform: translateY(-3px);
+}
+
+.lore-section h4 {
+    font-size: 1.2rem;
+    color: var(--hk-wiki-text-secondary);
+    text-align: center;
+    margin: 20px auto;
+    padding: 8px 0;
+    position: relative;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-bottom: none;
+}
+
+.lore-section h4:hover {
+    transform: translateY(-3px);
+    color: var(--hk-wiki-accent);
+    text-shadow: 0 1px 3px rgba(141, 160, 255, 0.3);
+}
+
+.lore-section h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 1.5px;
+    background: var(--hk-wiki-purple-light);
+    transition: width 0.3s ease;
+}
+
+.lore-section h4:hover::after {
+    width: 60px;
+}
+
+/* Grid de lore */
+.lore-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+/* Tarjeta de lore */
+.lore-card {
+    background-color: var(--hk-wiki-bg-light);
+    border-radius: var(--hk-wiki-border-radius);
+    overflow: hidden;
+    box-shadow: var(--hk-wiki-box-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 3px solid var(--hk-wiki-purple-dark);
+}
+
+.lore-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-left-color: var(--hk-wiki-purple-light);
+    cursor: pointer;
+}
+
+.lore-image {
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--hk-wiki-bg-dark);
+    position: relative;
+}
+
+.lore-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.lore-card:hover .lore-image img {
+    transform: scale(1.05);
+}
+
+.lore-info {
+    padding: 15px;
+}
+
+.lore-name {
+    color: var(--hk-wiki-accent);
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.lore-description {
+    color: var(--hk-wiki-text-primary);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.lore-details {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid var(--hk-wiki-border);
+    font-size: 0.85rem;
+}
+
+.lore-details p {
+    margin: 5px 0;
+    color: var(--hk-wiki-text-secondary);
+}
+
+.lore-details strong {
+    color: var(--hk-wiki-text-primary);
+}
+
+/* Clases para ajustar posición vertical */
+.img-pos-top .lore-image img {
+    object-position: center top;
+}
+
+.img-pos-bottom .lore-image img {
+    object-position: center bottom;
+}
+
+.img-pos-up .lore-image img {
+    object-position: center 30%;
+}
+
+.img-pos-down .lore-image img {
+    object-position: center 70%;
+}
+
+/* ... (estilos anteriores se mantienen igual) ... */
+
+/* Estilos para la descripción */
+.descripcion-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    transition: all 0.4s ease;
+}
+
+/* Estilos para la descripción con efectos especiales */
+.descripcion {
+    color: var(--hk-wiki-text-secondary);
+    font-style: italic;
+    text-align: center;
+    padding: 25px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    position: relative;
+    border-radius: var(--hk-wiki-border-radius);
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border: 1px solid transparent;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.descripcion::before, .descripcion::after {
+    content: '"';
+    color: var(--hk-wiki-accent);
+    font-size: 1.5rem;
+    vertical-align: middle;
+    opacity: 0.7;
+    transition: all 0.4s ease;
+}
+
+.descripcion:hover {
+    color: var(--hk-wiki-text-primary);
+    text-shadow: 0 0 8px rgba(136, 158, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.descripcion:hover::before,
+.descripcion:hover::after {
+    color: var(--hk-login-button);
+    opacity: 1;
+    text-shadow: 0 0 5px rgba(255, 197, 0, 0.5);
+}
+
+/* Efecto de brillo al pasar el mouse */
+.descripcion-container:hover {
+    filter: brightness(1.1);
+}
+
+/* Efecto de iluminación sutil */
+.descripcion-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: var(--hk-wiki-border-radius);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+.descripcion-container:hover::after {
+    opacity: 1;
+}
+
+/* Contenedor del mapa completo con efectos unificados */
+.full-map-container {
+    margin: 30px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--hk-wiki-bg-light);
+    border-radius: var(--hk-wiki-border-radius);
+    box-shadow: var(--hk-wiki-box-shadow);
+    max-width: 1000px;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.full-map-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3),
+                0 0 15px rgba(136, 158, 255, 0.2);
+    border-color: var(--hk-wiki-purple-light);
+    background-color: rgba(40, 40, 60, 0.8);
+}
+
+.full-map {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--hk-wiki-border-radius);
+    border: 1px solid var(--hk-wiki-border);
+    transition: all 0.4s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.full-map-container:hover .full-map {
+    transform: scale(1.02);
+    border-color: var(--hk-wiki-accent);
+    box-shadow: 0 0 10px rgba(136, 158, 255, 0.3);
+}
+
+.map-caption {
+    color: var(--hk-wiki-text-secondary);
+    font-style: italic;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    transition: all 0.4s ease;
+    position: relative;
+    font-size: 16px;
+}
+
+.full-map-container:hover .map-caption {
+    color: var(--hk-wiki-text-primary);
+    text-shadow: 0 0 8px rgba(136, 158, 255, 0.3);
+    transform: translateY(5px);
+}
+
+/* Efecto de iluminación para todo el contenedor */
+.full-map-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+        circle at center,
+        rgba(136, 158, 255, 0.1) 0%,
+        transparent 70%
+    );
+    border-radius: var(--hk-wiki-border-radius);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.full-map-container:hover::after {
+    opacity: 1;
+}
+
+/* Efecto de brillo para la imagen */
+.full-map-container:hover .full-map {
+    filter: brightness(1.05);
+}
+
+/* Responsive para el mapa */
+@media (max-width: 768px) {
+    .descripcion {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+    
+    .full-map-container {
+        padding: 15px;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .descripcion {
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+        max-width: 90%;
+        letter-spacing: 1px;
+    }
+    
+    h1::after {
+        width: 100px;
+    }
+    
+    h1:hover::after {
+        width: 120px;
+    }
+
+    .lore-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lore-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .lore-section h2 {
+        font-size: 1.5rem;
+    }
+}

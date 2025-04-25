@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hollow Knight Wiki | Hallownest</title>
+    <link rel="stylesheet" href="../CSS/inicio.css">
+    <link rel="stylesheet" href="../CSS/comentarios.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="#"><img src="../IMAGENES/hk-logo.png" alt="Hollow Knight Logo" width="150"></a>
+        </div>
+        <div class="nav-links">
+            <a href="#">Inicio</a>
+            <a href="NPC.html">NPCs</a>
+            <a href="JEFES.html">Jefes</a>
+            <a href="Mapa.html">Mapa</a>
+            <a href="Lore.html">Lore</a>
+        </div>
+        <div class="nav-search">
+            <input type="text" placeholder="Buscar en la wiki...">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="nav-login">
+            <a href="login.html">Iniciar sesión</a>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="container">
+        <header class="article-header">
+            <h1>Hollow Knight</h1>
+            <p class="subtitle">Bajo la desvanecida ciudad de Dirtmouth duerme un vasto y antiguo reino. Muchos se ven arrastrados bajo la superficie, en busca de riquezas, gloria o respuestas a viejos secretos.</p>
+        </header>
+        
+        <section class="content">
+            <div class="info-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiasQy5S1lsq3t-Jl4Po_q9tXtf-gqnnMsGQ&s" alt="El Caballero" width="200">
+                <div class="info-list">
+                    <h3>Información</h3>
+                    <div class="info-box-content">
+                        <p><strong>Developers:</strong> Team Cherry</p>
+                    </div>
+                    <div class="info-box-content">
+                        <p><strong>Música:</strong> Christopher Larkin</p>
+                    </div>
+                    <div class="info-box-content">
+                        <p><strong>Plataformas:</strong> Windows, macOS, Linux, Nintendo Switch, PlayStation 4, Xbox One</p>
+                    </div>
+                    <div class="info-box-content">
+                        <p><strong>Fecha de lanzamiento:</strong></p>
+                        <ul>
+                            <li>February 24th, 2017 (Windows)</li>
+                            <li>April 11th, 2017 (macOS, Linux)</li>
+                            <li>June 12th, 2018 (Nintendo Switch)</li>
+                            <li>September 25th, 2018 (PlayStation 4, Xbox One)</li>
+                        </ul>
+                    </div>
+                    <div class="info-box-content authors-section">
+                        <p><strong>Autores:</strong></p>
+                        <div class="author-container">
+                            <div class="author">
+                                <img src="../IMAGENES/hk-character.png" alt="Hollow knight" class="author-img">
+                                <div class="author-info">
+                                    <span class="author-name">Juan Rodríguez Lara</span>
+                                    <span class="author-id">2050202</span>
+                                </div>
+                            </div>
+                            <div class="author">
+                                <img src="../IMAGENES/sly-character.png" alt="Sly" class="author-img">
+                                <div class="author-info">
+                                    <span class="author-name">André Jair Díaz González</span>
+                                    <span class="author-id">2049041</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <article class="article-text">
+                <h2>Descripción</h2>
+                <p>En el corazón de Hallownest, un reino laberíntico consumido por la sombra, un Caballero solitario se alza. Su viaje es un misterio en sí mismo, desvelando secretos ancestrales tras cada puerta sellada y habilidad recién adquirida. Los mapas perdidos guían sus pasos hacia lo desconocido, donde formidables guardianes protegen la verdad. Cada batalla es un escalón hacia la luz o hacia una oscuridad aún mayor, en esta emocionante búsqueda por desentrañar la maldición que asola estas tierras olvidadas.</p>
+
+                <h2>Gameplay</h2>
+                <p>Controlas al Caballero en su exploración del extenso y conectado Hallownest, utilizando diversas habilidades de movimiento y combate que irás desbloqueando. Al más puro estilo Metroidvania, el acceso a nuevas áreas depende de obtener objetos y poderes clave. Para orientarte en este laberíntico mundo, deberás encontrar y comprar mapas a escurridizos comerciantes, con opciones para mejorarlos y marcar tus descubrimientos. El progreso a menudo se sella al derrotar desafiantes jefes y subjefes que te recompensarán con valiosas mejoras para tu aventura.</p>
+
+                <p>Al derrotar enemigos, el Caballero obtiene Geo, la moneda local para adquirir objetos de los mercaderes. Sin embargo, la muerte tiene un precio: reaparecerás en tu último descanso, pero perderás todo tu Geo. Para recuperarlo, deberás enfrentarte a tu propia sombra en el lugar de tu caída. Atacar también otorga ALMA, una energía vital que puedes usar para curarte o desatar poderosas habilidades especiales. Además, Hallownest ofrece Aguas Termales revitalizantes y la seguridad de los Bancos para recuperar tu salud.</p>
+
+            </article>
+        </section>
+    </main>
+
+    <!-- Sección de Comentarios -->
+<section class="comments-section">
+    <h2>Comentarios</h2>
+    
+    <!-- Formulario para nuevos comentarios -->
+<form class="comment-form" id="commentForm">
+    <h3>Deja tu comentario</h3>
+    <div class="form-group">
+        <label for="comment">Comentario:</label>
+        <textarea id="comment" name="comment" rows="4" required placeholder="Escribe tu comentario aquí..."></textarea>
+    </div>
+    <button type="submit" class="submit-btn">Enviar comentario</button>
+</form>
+
+    <!-- Lista de comentarios existentes -->
+    <div class="comments-list" id="commentsList">
+        <!-- Ejemplo de comentario (esto se generaría dinámicamente desde la BD) -->
+        <div class="comment">
+            <div class="comment-header">
+                <img src="../IMAGENES/default-avatar.png" alt="Avatar" class="comment-avatar">
+                <div class="comment-user">
+                    <span class="username">UsuarioEjemplo</span>
+                    <span class="comment-date">20/11/2023</span>
+                </div>
+            </div>
+            <div class="comment-content">
+                <p>¡Este juego es increíble! La atmósfera de Hallownest es única.</p>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <!-- Pie de página -->
+    <footer class="footer">
+        <p>© 2023 Hollow Knight Wiki. Todos los derechos reservados a Team Cherry.</p>
+    </footer>
+
+    
+</body>
+</html>
